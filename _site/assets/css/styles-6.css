@@ -115,28 +115,6 @@ p {
   margin-top: 0;
   margin-bottom: 15px;
 }
-.sidebar-wrapper .degree {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 15px;
-}
-.sidebar-wrapper .education-container .item:last-child {
-  margin-bottom: 0;
-}
-.sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-  margin-top: 0;
-}
-.sidebar-wrapper .education-container .time {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-}
 .sidebar-wrapper .languages-container .lang-desc {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -210,6 +188,17 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
+}
+.main-wrapper .school {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .degree {
+  margin-bottom: 10px;
+  color: #97AAC3;
 }
 .main-wrapper .time {
   position: absolute;
@@ -309,5 +298,13 @@ used for profile image
   border: 0px solid #fff;
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.school-img {
+  max-height: 100px;
+  max-width: 100px;
+  margin-bottom: 15px;
+  border: 0px solid #fff;
+  float: right;
 }
 
