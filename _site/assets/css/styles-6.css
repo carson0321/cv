@@ -301,9 +301,7 @@ used for profile image
 }
 
 .school-img {
-  max-height: 100px;
-  max-width: 100px;
-  margin-bottom: 15px;
+  max-width: 80px;
   border: 0px solid #fff;
   float: right;
 }
