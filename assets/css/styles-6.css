@@ -182,13 +182,6 @@ p {
   overflow: hidden;
   margin-bottom: 2px;
 }
-.main-wrapper .job-title {
-  color: #3F4650;
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 500;
-}
 .main-wrapper .school {
   color: #3F4650;
   font-size: 16px;
@@ -200,15 +193,33 @@ p {
   margin-bottom: 10px;
   color: #97AAC3;
 }
+.main-wrapper .honors-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .honors-organization {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
 .main-wrapper .time {
   position: absolute;
   right: 0;
   top: 0;
   color: #97AAC3;
 }
-.main-wrapper .company {
+.main-wrapper .job-title {
   margin-bottom: 10px;
   color: #97AAC3;
+}
+.main-wrapper .company {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
 }
 .main-wrapper .project-title {
   font-size: 16px;
@@ -299,8 +310,12 @@ used for profile image
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-
 .school-img {
+  max-width: 80px;
+  border: 0px solid #fff;
+  float: right;
+}
+.honors-img {
   max-width: 80px;
   border: 0px solid #fff;
   float: right;
