@@ -136,6 +136,15 @@ p {
 .sidebar-wrapper .interests-list li:last-child {
   margin-bottom: 0;
 }
+.sidebar-wrapper .systems-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .systems-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .systems-list li:last-child {
+  margin-bottom: 0;
+}
 .main-wrapper {
   background: #fff;
   padding: 60px;
