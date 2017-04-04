@@ -329,4 +329,9 @@ used for profile image
   border: 0px solid #fff;
   float: right;
 }
+.company-img {
+  max-width: 80px;
+  border: 0px solid #fff;
+  float: right;
+}
 
