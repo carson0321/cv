@@ -1,6 +1,6 @@
 # My-online-CV
 
-http://kiki86151.github.io/cv/
+https://kiki86151.github.io/cv/
 
 # Requirements
 
