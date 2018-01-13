@@ -1,6 +1,6 @@
 # My-online-CV
 
-https://kiki86151.github.io/cv/
+https://carson0321.github.io/cv/
 
 # Requirements
 
@@ -25,7 +25,7 @@ sudo apt-get install ruby
 ```bash
 sudo gem update --system
 sudo gem install rubygems-update
-update_rubygems
+sudo update_rubygems
 ```
 
 * NodeJS
@@ -49,7 +49,7 @@ export PATH=$PATH:/opt/nodejs/bin
 * Jekyll
 
 ```bash
-gem install jekyll bundler
+sudo gem install jekyll bundler
 ```
 
 Usage
