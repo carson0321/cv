@@ -1,6 +1,8 @@
 # My-online-CV
 
-https://carson0321.github.io/cv/
+* https://carson0321.github.io/cv
+* http://carson0321.tk/cv
+
 
 # Requirements
 
@@ -64,7 +66,7 @@ bundle exec jekyll serve
 # Begin to run on localhost
 
 ```bash
-git clone https://github.com/kiki86151/cv ~/test-cv
+git clone https://github.com/carson0321/cv ~/test-cv
 cd ~/test-cv
 bundle install
 bundle exec jekyll serve
@@ -83,7 +85,7 @@ This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/M
 ```
 MIT License
 
-Copyright (c) 2017 Carson Wang <kiki86151@hotmail.com>
+Copyright (c) 2017 Carson Wang <r03944040@ntu.edu.tw>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
