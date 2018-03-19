@@ -14,6 +14,12 @@
 
 # Installation
 
+* Install all
+
+```bash
+sudo make install
+```
+
 * Ruby
 
 ```bash
