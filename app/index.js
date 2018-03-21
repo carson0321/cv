@@ -7,47 +7,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const TodoList = (props) => (
-	<ul>
-		{
-			props.items.map((item) => (
-				<li key={item.id}>{item.text}</li>
-			))
-		}
-	</ul>
-)
-
-class TodoApp extends React.Component {
-	constructor(props) {
-		super(props);
-		this.onChange = this.onChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
-		this.state = {
-			items: [],
-			text: '',
-		}
-	}
-	onChange(e) {
-    	this.setState({text: e.target.value});
-	}
-	handleSubmit(e) {
-    	e.preventDefault();
-    	const nextItems = this.state.items.concat([{text: this.state.text, id: Date.now()}]);
-    	const nextText = '';
-    	this.setState({items: nextItems, text: nextText});
-	}
-	render() {
-	    return (
-	      <div>
-	        <h3>TODO</h3>
-	        <TodoList items={this.state.items} />
-	        <form onSubmit={this.handleSubmit}>
-	          <input onChange={this.onChange} value={this.state.text} />
-	          <button>{'Add #' + (this.state.items.length + 1)}</button>
-	        </form>
-	      </div>
-	    );
-	}
+class UserGithub extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          username: '',
+          githubtUrl: '',
+          avatarUrl: '',
+        }
+    }
+    componentDidMount() {
+        $.get(this.props.source, (result) => {
+            console.log(result);
+            const data = result;
+            if (data) {
+              this.setState({
+                    username: data.name,
+                    githubtUrl: data.html_url,
+                    avatarUrl: data.avatar_url
+              });
+            }
+        });
+    }
+    render() {
+        return (
+          <div>
+            <h3>{this.state.username}</h3>
+            <img src={this.state.avatarUrl} />
+            <a href={this.state.githubtUrl}>Github Link</a>.
+          </div>
+        );
+    }
 }
 
-ReactDOM.render(<TodoApp />, document.getElementById('app'));
+ReactDOM.render(
+  <UserGithub source="https://api.github.com/users/carson0321" />,
+  document.getElementById('app')
+);
+
