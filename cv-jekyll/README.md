@@ -1,7 +1,7 @@
 # My-online-CV-using-Jekyll
 
-* https://carson0321.github.io/cv-jekyll
-* http://carson0321.tk/cv-jekyll
+* https://carson0321.github.io/cv
+* http://carson0321.tk/cv
 
 
 # Requirements
@@ -21,16 +21,6 @@ sudo make install
 ```
 
 
-# Usage
-
-```bash
-jekyll new my-awesome-site
-cd my-awesome-site
-bundle install
-bundle exec jekyll serve
-# => Now browse to http://localhost:4000
-```
-
 # Begin to run on localhost
 
 ```bash
@@ -40,6 +30,13 @@ bundle install
 bundle exec jekyll serve
 # => Now browse to http://localhost:4000/cv/
 ```
+
+* Other
+
+```bash
+jekyll new my-awesome-site
+```
+
 
 # Credits
 
