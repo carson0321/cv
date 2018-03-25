@@ -1,7 +1,7 @@
-# My-online-CV
+# My-online-CV-using-Jekyll
 
-* https://carson0321.github.io/cv
-* http://carson0321.tk/cv
+* https://carson0321.github.io/cv-jekyll
+* http://carson0321.tk/cv-jekyll
 
 
 # Requirements
@@ -14,53 +14,15 @@
 
 # Installation
 
-* Install all
+* Install all requirements
 
 ```bash
 sudo make install
 ```
 
-* Ruby
 
-```bash
-sudo apt-get install ruby-full
-or
-sudo apt-get install ruby
-```
+# Usage
 
-* RubyGems
-
-```bash
-sudo gem update --system
-sudo gem install rubygems-update
-sudo update_rubygems
-```
-
-* NodeJS
-
-Not recommended:
-```bash
-sudo apt-get install nodejs
-```
-
-complied or binary version
-```bash
-wget http://nodejs.org/xxxxx.tar.gz
-tar xvf node.tar.gz
-cd node/
-./configure or ./configure --prefix=/opt/nodejs
-sudo make
-sudo make install
-export PATH=$PATH:/opt/nodejs/bin
-```
-
-* Jekyll
-
-```bash
-sudo gem install jekyll bundler
-```
-
-Usage
 ```bash
 jekyll new my-awesome-site
 cd my-awesome-site

@@ -1,18 +1,15 @@
-GEM_VERSION=2.7.6
+RBENV_HOME=/opt/rbenv
 
 install:
-	# Ruby
-	sudo ./install_ruby.sh
-	## RubyGems
-	wget https://github.com/rubygems/rubygems/archive/v${GEM_VERSION}.tar.gz
-	tar xvf v${GEM_VERSION}.tar.gz
-	$(shell cd rubygems-${GEM_VERSION}; sudo /opt/ruby/bin/ruby setup.rb; cd -)
-	sudo rm -rf rubygems-${GEM_VERSION}* v${GEM_VERSION}*
-	sudo gem update --system
-	sudo gem install rubygems-update
-	sudo update_rubygems
-	# Jekyll
-	sudo gem install jekyll bundler
+	# Use rbenv to install ruby
+	sudo ./install_rbenv.sh
+	# RubyGems
+	${RBENV_HOME}/shims/gem update --system
+	${RBENV_HOME}/shims/gem install rubygems-update
+	${RBENV_HOME}/shims/update_rubygems
+	# Jekyll, Bundler
+	${RBENV_HOME}/shims/gem install jekyll bundler
+	sudo chown -R carson:carson ${RBENV_HOME}
 	## fix issue https://github.com/rubygems/rubygems/issues/2180
 	#sudo mkdir -p /usr/lib/ruby/gems/${RUBY_VERSION}.0/gems/bundler-1.16.1/exe/
 	#sudo ln -s /var/lib/gems/${RUBY_VERSION}.0/gems/bundler-1.16.1/exe/bundle /usr/lib/ruby/gems/${RUBY_VERSION}.0/gems/bundler-1.16.1/exe/
