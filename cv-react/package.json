@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carson0321/cv-test.git"
+    "url": "git+https://github.com/carson0321/cv.git"
   },
   "author": "Carson Wang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carson0321/cv-test/issues"
+    "url": "https://github.com/carson0321/cv/issues"
   },
-  "homepage": "https://github.com/carson0321/cv-test#readme",
+  "homepage": "https://github.com/carson0321/cv#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
