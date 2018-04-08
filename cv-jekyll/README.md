@@ -11,13 +11,6 @@
 * [NodeJS](https://nodejs.org/en/download/)
 
 
-# Install all requirements
-
-```bash
-sudo make install
-```
-
-
 # Begin to run on localhost
 
 ```bash
