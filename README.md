@@ -1,10 +1,36 @@
-# My-online-CV-using-React
+# My-online-CV-using-Jekyll
+
+* https://carson0321.github.io/cv/
+
 
 # Requirements
 
-# Installation
+* [Jekyll](https://jekyllrb.com/docs/installation/)
+* [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+* [RubyGems](https://rubygems.org/pages/download)
+* [NodeJS](https://nodejs.org/en/download/)
 
-# Usage
+
+# Begin to run on localhost
+
+```bash
+git clone https://github.com/carson0321/cv ~/test-cv
+cd ~/test-cv
+bundle install
+bundle exec jekyll serve
+# => Now browse to http://localhost:4000/cv/
+```
+
+P.S.
+```bash
+jekyll new my-awesome-site
+```
+
+
+# Credits
+
+* [sharu725/online-cv](https://github.com/sharu725/online-cv)
+* [xriley/Orbit-Theme](https://github.com/xriley/Orbit-Theme)
 
 # License
 
@@ -13,7 +39,7 @@ This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/M
 ```
 MIT License
 
-Copyright (c) 2018 Carson Wang <r03944040@ntu.edu.tw>
+Copyright (c) 2017 Carson Wang <r03944040@ntu.edu.tw>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -35,5 +61,5 @@ SOFTWARE.
 
 ```
 
-© 2018 Carson Wang.
+© 2017 Carson Wang.
 
