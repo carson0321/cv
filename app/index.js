@@ -4,27 +4,44 @@
  * mail: carson.wang@droi.com
  * Created Time: 2018-03-20 12:13:36
  */
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import React, { Component } from "react";
-import { render } from "react-dom";
+class UserGithub extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          username: '',
+          githubtUrl: '',
+          avatarUrl: '',
+        }
+    }
+    componentDidMount() {
+        $.get(this.props.source, (result) => {
+            console.log(result);
+            const data = result;
+            if (data) {
+              this.setState({
+                    username: data.name,
+                    githubtUrl: data.html_url,
+                    avatarUrl: data.avatar_url
+              });
+            }
+        });
+    }
+    render() {
+        return (
+          <div>
+            <h3>{this.state.username}</h3>
+            <img src={this.state.avatarUrl} />
+            <a href={this.state.githubtUrl}>Github Link</a>.
+          </div>
+        );
+    }
+}
 
-import Form from "react-jsonschema-form";
+ReactDOM.render(
+  <UserGithub source="https://api.github.com/users/carson0321" />,
+  document.getElementById('app')
+);
 
-const schema = {
-  title: "Todo",
-  type: "object",
-  required: ["title"],
-  properties: {
-    title: {type: "string", title: "Title", default: "A new task"},
-    done: {type: "boolean", title: "Done?", default: false}
-  }
-};
-
-const log = (type) => console.log.bind(console, type);
-
-render((
-  <Form schema={schema}
-        onChange={log("changed")}
-        onSubmit={log("submitted")}
-        onError={log("errors")} />
-), document.getElementById("app"));
