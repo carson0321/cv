@@ -1,6 +1,6 @@
 # My-online-CV-using-Jekyll
 
-* https://carson0321.github.io/cv/
+* [Website](https://carson0321.github.io/cv/)
 
 ## Requirements
 
