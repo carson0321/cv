@@ -2,16 +2,16 @@
 
 * https://carson0321.github.io/cv/
 
-
-# Requirements
+## Requirements
 
 * [Jekyll](https://jekyllrb.com/docs/installation/)
 * [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 * [RubyGems](https://rubygems.org/pages/download)
 * [NodeJS](https://nodejs.org/en/download/)
 
+## Get started
 
-# Begin to run on localhost
+* Run on localhost
 
 ```bash
 git clone https://github.com/carson0321/cv ~/test-cv
@@ -21,22 +21,28 @@ bundle exec jekyll serve
 # => Now browse to http://localhost:4000/cv/
 ```
 
-P.S.
+or
+
+```bash
+docker-compose up -d
+```
+
+* Create a new article
+
 ```bash
 jekyll new my-awesome-site
 ```
 
-
-# Credits
+## Credits
 
 * [sharu725/online-cv](https://github.com/sharu725/online-cv)
 * [xriley/Orbit-Theme](https://github.com/xriley/Orbit-Theme)
 
-# License
+## License
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
-```
+```bash
 MIT License
 
 Copyright (c) 2017 Carson Wang <r03944040@ntu.edu.tw>
@@ -62,4 +68,3 @@ SOFTWARE.
 ```
 
 © 2017 Carson Wang.
-
