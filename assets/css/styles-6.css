@@ -16,7 +16,6 @@ body {
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-        
 }
 @media (max-width: 767px) {
     body{ 
@@ -184,7 +183,7 @@ p {
   margin-bottom: 60px;
 }
 .main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .main-wrapper .upper-row {
   position: relative;
@@ -320,17 +319,17 @@ used for profile image
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .school-img {
-  max-width: 80px;
+  max-width: 90px;
   border: 0px solid #fff;
   float: right;
 }
 .honors-img {
-  max-width: 80px;
+  max-width: 90px;
   border: 0px solid #fff;
   float: right;
 }
 .company-img {
-  max-width: 80px;
+  max-width: 90px;
   border: 0px solid #fff;
   float: right;
 }
