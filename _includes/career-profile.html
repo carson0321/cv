@@ -1,9 +1,11 @@
+{% assign career-profile = site.data.data.career-profile %}
+{% if career-profile %}
 <section class="section summary-section">
     <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
         <div class="item">
             <div class="meta">
             <div class="upper-row">
-                <h3 class="school-title">Overall 2+ years software development experience</h3>
+                <h3 class="school-title">{{ career-profile.title }}</h3>
             </div><!--//upper-row-->
             </div><!--//meta-->
             <br/>
@@ -15,3 +17,24 @@
             </ul>
         </div><!--//item-->
 </section><!--//section--> 
+{% endif %}
+
+
+<!-- {% assign career-profile = site.data.data.career-profile %}
+{% if career-profile %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ career-profile.title }}
+  </h2>
+
+  <div class="summary">
+    {{ career-profile.summary | markdownify }}
+  </div>
+    
+</section>
+{% endif %} -->

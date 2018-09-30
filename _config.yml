@@ -1,30 +1,27 @@
 
 title: My Resume
+description: "Carson resume using Jekyll"
 url: 'https://carson0321.github.io'
 baseurl: '/cv' #change it according to your repository name
-
-# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-style: styles-6
-
-
-#Profile information
-name: Carson Wang
-tagline: Software Engineer
-pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-#sidebar links
-email: r03944040@g.ntu.edu.tw
-#phone: 012 345 6789
-website: carson0321.github.io #do not add http://
-linkedin: carson321
-github: carson0321
-#twitter: '@webjeda'
-
+# Style will be applied only after restarting the build or serve. Just choose one of the options.
+theme_skin: blue # blue turquoise green berry orange ceramic
 
 # Tracker
 analytics: UA-120987054-2
-#Update all the sections by editing the files inside _includes folder.
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Build settings
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development
+
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false

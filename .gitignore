@@ -1,7 +1,8 @@
 .DS_Store
 *.swp
 package-lock.json
-
+.sass-cache/
+.jekyll-metadata
 
 # Logs
 logs

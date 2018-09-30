@@ -1,10 +1,18 @@
-<div class="sidebar-container container-block">
-    <h2 class="container-block-title">Systems</h2>
-    <ul class="list-unstyled sidebar-list">
-        <li>Windows</li>
-        <li>Linux (Ubuntu)</li>
-        <li>macOS</li>
-        <li>iOS</li>
-        <li>Android</li>
-    </ul>
-</div>
+{% assign systems = site.data.data.sidebar.systems %}
+{% if systems %}
+<div class="systems-container container-block">
+
+  <h2 class="container-block-title">
+    systems
+  </h2>
+
+  <ul class="list-unstyled systems-list">
+    {%for system in systems %}
+    <li>
+      {{ system.item }}
+    </li>
+    {% endfor %}
+  </ul>
+
+</div><!--//systems-->
+{% endif %}
