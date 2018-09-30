@@ -1,4 +1,4 @@
-# My-online-CV-using-Jekyll
+# My-online-CV
 
 * [Website](https://carson0321.github.io/cv/)
 
@@ -25,12 +25,6 @@ or
 
 ```bash
 docker-compose up -d
-```
-
-* Create a new article
-
-```bash
-jekyll new my-awesome-site
 ```
 
 ## Credits
