@@ -5,7 +5,6 @@
         <h1 class="name">{% if site.name %}{{site.name}}{% else %}Alan Doe{% endif %}</h1>
         <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Full Stack Developer{% endif %}</h3>
     </div><!--//profile-container-->
-
     <div class="contact-container container-block">
         <ul class="list-unstyled contact-list">
             {% if site.email %}
@@ -41,6 +40,7 @@
         </ul>
     </div><!--//contact-container-->
     {% include language.html %}
+    {% include disability.html %}
     {% include systems.html %}
     {% include interests.html %}
     {% include skills.html %}  
