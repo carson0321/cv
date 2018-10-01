@@ -1,8 +1,15 @@
 {% assign honors = site.data.data.honors %}
 {% if honors %}
 <section class="section honors-section">
-<h2 class="section-title"><i class="fa fa-trophy"></i>Awards & Honors</h2>
-    {% for honor in honors %}
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa fa-trophy fa-stack-1x fa-inverse"></i>
+    </span>
+    Awards & Honors
+  </h2>
+
+  {% for honor in honors %}
     <div class="item">
       <div class="meta">
         <div class="upper-row">
@@ -13,39 +20,47 @@
       </div><!--//meta-->
 
       {% if honor.image %}
-      <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" />
+        <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" />
       {% endif %}
 
       {% if honor.details %}
-      <div class="details">
-        {{ honor.details | markdownify }}
-      </div><!--//details-->
+        <div class="details">{{ honor.details | markdownify }}</div><!--//details-->
       {% endif %}
 
       <ul type="disc">
-      {%for column in honor.columns %}
-        <li><p>
-            {% if column.title %}
-                <b>{{ column.title }}: </b>
-            {% endif %}
-            {% if column.blod %}
-                <b>{{ column.item }}</b>
-            {% else %}
-                {{ column.item }}
-            {% endif %}
-        </p></li>
-      {% endfor %}
-      <br/>
+        {%for column in honor.columns %}
+          <li><p>
+            {% if column.title %}<b>{{ column.title }}</b>{% endif %}
+            {% if column.title and column.item %}<b>:</b>{% endif %}
+            {{ column.item }}
+          </p></li>
+        {% endfor %}
+        <br/>
       </ul>
+
     </div><!--//item-->
     {% endfor %}
+<!-- ==========================================exception========================================== -->
+<div class="item">
+  <div class="meta">
+    <div class="upper-row">
+      <h3 class="honor-title">Scholarship of Special Education</h3>
+      <div class="time">2011 - 2013, 2015</div>
+    </div><!--//upper-row-->
+    <div class="organization">Ministry of Education</div>
+    <div class="upper-row">
+      <h3 class="honor-title">Scholarship of Cultural Foundation</h3>
+      <div class="time">2011</div>
+    </div><!--//upper-row-->
+    <div class="organization">Chia Hsin Cement Corporation</div>
+  </div><!--//meta-->
+  <img class="honor-img" src="{{site.baseurl}}/assets/images/chc.png" alt="profile picture" />
+  <img class="honor-img" src="{{site.baseurl}}/assets/images/mes.png" alt="profile picture" />
+  <ul type="disc">
+      <li><p>Achieved over a semester grade point average of 75/100.</p></li>
+      <br/>
+  </ul>
+</div><!--//item-->
+<!-- ==========================================exception========================================== -->
 </section><!--//section-->
 {% endif %}
-
-  <!-- <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
-    </span>
-    Experiences
-  </h2> -->
