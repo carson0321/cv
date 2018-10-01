@@ -1,9 +1,11 @@
-<div class="sidebar-container container-block">
-    <h2 class="container-block-title">Interests</h2>
-    <ul class="list-unstyled sidebar-list">
-        <li>Games</li>
-        <li>Movies &amp; Animations</li>
-        <li>Technology news</li>
-        <li>Open source</li>
-    </ul>
+{% assign interests = site.data.data.sidebar.interests %}
+{% if interests %}
+<div class="interests-container container-block">
+  <h2 class="container-block-title">interests</h2>
+  <ul class="list-unstyled interests-list">
+    {% for interest in interests %}
+      <li>{{ interest.item }}</li>
+    {% endfor %}
+  </ul>
 </div><!--//interests-->
+{% endif %}

@@ -1,8 +1,14 @@
-<div class="sidebar-container container-block">
-    <h2 class="container-block-title">Disability</h2>
-    <ul class="list-unstyled sidebar-list">
-        <li>Hearing impairment <span class="sidebar-desc">(Left: hearing aid, Right: cochlear implant)</span></li>
-        <li>Speech comprehension <span class="sidebar-desc">(Text-based conversation 100%, One-on-one conversation 70-95%, Meeting conversation 30-70%)</span></li>
-    </ul>
-</div>
-    
+{% assign disability = site.data.data.sidebar.disability %}
+{% if disability %}
+<div class="disability-container container-block">
+  <h2 class="container-block-title">disability</h2>
+  <ul class="list-unstyled disability-list">
+    {%for level in disability %}
+      <li>
+        {{ level.idiom }}
+        <span class="lang-desc">({{ level.level }})</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div><!--//disability-->
+{% endif %}
