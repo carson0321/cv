@@ -4,7 +4,7 @@ description: "Carson resume using Jekyll"
 url: 'https://carson0321.github.io'
 baseurl: '/cv' #change it according to your repository name
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: blue # blue turquoise green berry orange ceramic
+theme_skin: _ceramic # blue turquoise green berry orange ceramic
 
 # Tracker
 analytics: UA-120987054-2

@@ -1,45 +1,69 @@
-<section class="section education-section">
-<h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
+{% assign education = site.data.data.education %}
+{% if education %}
+  {% if site.data.data.sidebar.education %}
+  <div class="education-container container-block">
+
+    <h2 class="container-block-title">
+      Education
+    </h2>
+
+    {% for graduation in education %}
     <div class="item">
-        <div class="meta">
-        <div class="upper-row">
-            <h3 class="school-title">National Taiwan University</h3>
-            <div class="time">Sep 2014 – Jul 2016</div>
-        </div><!--//upper-row-->
-        <div class="degree">Master of Science in Graduate Institute of Networking and Multimedia</div>
-        </div><!--//meta-->
-        <img class="school-img" src="{{site.baseurl}}/assets/images/ntu.png" alt="profile picture" />
-         <ul type="disc">
-            <li><p><b>Master’s Thesis:</b>
-                Predicting Web Services with Service Ontology</p></li>
-            <li><p><b>Lab & Advisor:</b>
-                Software Engineering Laboratory, Jonathan Lee, Ph.D</p></li>
-            <li><p><b>Relevant Research Domains:</b>
-                Prediction and Recommender System, Ontology, Natural Language Processing, Information Retrieval and Extraction, Machine Learning</p></li>
-            <li><p><b>Relevant Courseworks:</b>
-                Software Engineering, Software Engineering Design (Design Pattern), Computer Security, Interactive Computer Graphics, Computer Vision, Natural Language Processing, Information Retrieval and Extraction, Personal Communication Service</p></li>
-            <br/>
-         </ul>
+      <h4 class="degree">{{ graduation.degree }}</h4>
+      <h5 class="meta">{{ graduation.university }}</h5>
+      <div class="time">{{ graduation.time }}</div>
     </div><!--//item-->
-<!-------------------------------------------------------------------------------------------------------------------->
-    <div class="item">
+    {% endfor %}
+
+  </div><!--//education-container-->
+  {% else %}
+  <section class="section education-section">
+  <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
+      {% for graduation in education %}
+      <div class="item">
         <div class="meta">
-        <div class="upper-row">
-            <h3 class="school-title">National Central University</h3>
-            <div class="time">Sep 2009 – Jun 2013</div>
-        </div><!--//upper-row-->
-        <div class="degree">Bachelor of Computer Science and Information Engineering</div>
+          <div class="upper-row">
+            <h3 class="university">{{ graduation.university }}</h3>
+            <div class="time">{{ graduation.time }}</div>
+          </div><!--//upper-row-->
+          <div class="degree">{{ graduation.degree }}</div>
         </div><!--//meta-->
-        <img class="school-img" src="{{site.baseurl}}/assets/images/ncu.png" alt="profile picture" />
-         <ul type="disc">
-            <li><p><b>Senior Projects:</b>
-                System Detection by Face Orientation, English Learning-Companion Robot</p></li>
-            <li><p><b>Lab & Advisor:</b>
-                Computational Intelligence and Human Computer Interaction Laboratory, Mu-Chun Su, Ph.D</p></li>
-            <li><p><b>Relevant Courseworks:</b>
-                The Attack and Defense of Computers, Object Oriented Analysis and Design, Computer Animation and 3D Games, Virtual Reality, Multimedia Signal Processing, Software Hardware Codesign, Computer Networking</p></li>
-            <li><p><b>Societies:</b>
-                Service Club of NCU (Member, Sep 2009 - Jun 2011), Sign Language Club of NCU (Member, Sep 2009 - Jun 2010), Student Association of NCU CSIE (Member of IT Department, Sep 2009 - Jun 2010)</p></li>
-         </ul>
-    </div><!--//item-->
-</section><!--//education-container-->
+      
+        {% if graduation.image %}
+        <img class="education-img" src="{{site.baseurl}}/assets/images/{{graduation.image}}" alt="profile picture" />
+        {% endif %}
+      
+        {% if graduation.details %}
+        <div class="details">
+          {{ graduation.details | markdownify }}
+        </div><!--//details-->
+        {% endif %}
+      
+        <ul type="disc">
+        {%for column in graduation.columns %}
+          <li><p>
+              {% if column.title %}
+                  <b>{{ column.title }}: </b>
+              {% endif %}
+              {% if column.blod %}
+                  <b>{{ column.item }}</b>
+              {% else %}
+                  {{ column.item }}
+              {% endif %}
+          </p></li>
+        {% endfor %}
+        <br/>
+        </ul>
+      </div><!--//item-->
+      {% endfor %}
+  </section><!--//section-->
+  {% endif %}
+{% endif %}
+
+    <!-- <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+      </span>
+      Education
+    </h2> -->

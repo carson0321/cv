@@ -1,81 +1,39 @@
+{% assign experiences = site.data.data.experiences %}
+{% if experiences %}
 <section class="section experiences-section">
 <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-<!-------------------------------------------------------------------------------------------------------------------->
+    {% for experience in experiences %}
     <div class="item">
-        <div class="meta">
-            <div class="upper-row">
-                <h3 class="company-title">Anonymous :)</h3>
-                <div class="time">2018.7 - Present</div>
-            </div><!--//upper-row-->
-            <div class="job-title">
-                Research & Development, Senior Software Engineer</p>
-                Javascript (NodeJS, ES5+) / Python
-            </div>
-            <img class="company-img" src="{{site.baseurl}}/assets/images/anonymous.png" alt="profile picture" />
-        </div><!--//meta-->
+      <div class="meta">
+        <div class="upper-row">
+          <h3 class="company">{{ experience.company }}</h3>
+          <div class="time">{{ experience.time }}</div>
+        </div><!--//upper-row-->
+        <div class="job-title">{{ experience.role }}</div>
+        <div class="program-language">{{ experience.language }}</div>
+      </div><!--//meta-->
+
+      {% if experience.image %}
+      <img class="experience-img" src="{{site.baseurl}}/assets/images/{{experience.image}}" alt="profile picture" />
+      {% endif %}
+
+      {%for project in experience.projects %}
+        {% if project.details %}
         <div class="details">
-            <p><b>Summary of Roles:</b>
-                Backend engineer, Data engineer, and System architect</p>
+          {{ project.details | markdownify }}
         </div><!--//details-->
+        {% endif %}
         <p><b>My contributions and responsibilities:</b></p>
         <ul type="disc">
-            <li><p>Replaced Graylog2 platform with ELK stack (Elasticsearch, Logstash, Kibana) to centralize logs and visualize data.</p></li>
-            <li><p>Evaluated several frameworks for message queues (ActiveMQ, RabbitMQ, RockerMQ, Kafka, etc.), and designed a message broker system by importing Apache Kafka.</p></li>
+        {%for column in project.columns %}
+          <li><p>
+            {{ column.item }}
+          </p></li>
+        {% endfor %}
+        <br/>
         </ul>
-    </div>
-    <hr/>
-<!-------------------------------------------------------------------------------------------------------------------->
-    <div class="item">
-        <div class="meta">
-            <div class="upper-row">
-                <h3 class="company-title">Shanghai Droi Technology Co., Ltd</h3>
-                <div class="time">2016.9 - 2018.6</div>
-            </div><!--//upper-row-->
-            <div class="job-title">
-                Taipei Research Center at Taipei 101, IDroi team, Senior Software Engineer</p>
-                Java / Javascript (NodeJS, ES5+) / Lua / Python / Objective-C / Swift
-            </div>
-            <img class="company-img" src="{{site.baseurl}}/assets/images/droi.jpg" alt="profile picture" />
-        </div><!--//meta-->
-        <div class="details">
-            <u><p><a href="https://play.google.com/store/apps/details?id=com.idroi.infohub&hl=zh_TW" style="color:blue;" target="_blank"><b>InfoHub:</b></a></u>
-                Designed a mobile application that represented a real-time data concept within data industry about information, such as news, vidoes, and funny images.</p>
-            <p><b>Summary of Roles:</b>
-                Android full stack developer, Backend engineer, and Data engineer</p>
-        </div><!--//details-->
-        <p><b>My contributions and responsibilities:</b></p>
-        <ul type="disc">
-            <li><p>Developed a native prototype for Android application including user interfaces and advertising placements, and launched the first version.</p></li>
-            <li><p>Created multiple interfaces (RESTful) to communicate between Android client and DroiBaaS (Backend as a service) server around cloud services.</p></li>
-            <li><p>Managed the Android application for notifications within client and server by using Firebase cloud messaging and DroiBaaS cloud code with over 2,500,000 notifications every month.</p></li>
-            <li><p>Built a cache system by using MongoDB to improve the execution time of the crawler by 24x, and sped up the process from more than 24 hours to only 1-2 hour or less.</p></li>
-            <li><p>Expanded the capability of crawler to obtain external information by implementing several third-party APIs (Youtube, Vimeo, Tenor, Giphy, Makeagif, Gfycat and so on) as scrapers.</p></li>
-            <li><p>Extracted useful information, such as news images, news contents, from over 8000 news sources (100,000 over news daily) by parsing social meta tag and using information extraction algorithm.
-            <li><p>Compressed over 100,000 data from over 8000 news sources through FFmpeg to upload to CDN (AzureCDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, Cloudflare), and reduced the bandwidth cost by more than 90%.</p></li>
-            <li><p>Cooperated with Shanghai FreemeOS team to integrate InfoHub client into the Android Launcher with FreemeOS system (Traced large scale code without documents, and injected InfoHub application into FreemeOS system on my own to generate first revenues for IDroi team.)</p></li>
-            <li><p>Designed a news recommendation system by using machine learning algorithms (SVD/MF for collaborative filtering and Word2Vec/Doc2Vec)</p></li>
-        </ul>
-        <div class="details">
-            <u><p><a href="https://adzodiac.droi.com/" style="color:blue;" target="_blank"><b>AdZodiac:</b></a></u>
-                Built a fully integrated advertising platform based on web services and MoPub mobile SDK by using different advertising APIs (Facebook, AdMob, Flurry, etc.)</p>
-            <p><b>Summary of Roles:</b>
-                iOS engineer, Collaborator</p>
-        </div><!--//details-->
-        <p><b>My contributions and responsibilities:</b></p>
-        <ul type="disc">
-            <li><p>Developed a native application for iOS platform (At first iOS application was a closed book to me, but I took only 2 months to complete all Android existing features.)</p></li>
-            <li><p>Provided error logger support for the communication between the server and client on the Android client side.</p></li>
-            <li><p>Assisted Android client side in analyzing and solving memory leak problems.</p></li>
-        </ul>
-        <div class="details">
-            <u><p><span style="color:red;"><b>Others:</b></span></u>
-                It has nothing to do with projects but all to do with technologies. Just have a brainstorm and implement my idea.</p>
-            <p><b>Summary of Roles:</b>
-                DevOps engineer</p>
-        </div><!--//details-->
-        <ul type="disc">
-            <li><p>Designed chatbots on WeChat and Telegram to customize services including an external interface (RESTful), and achieved the effect of automatic broadcasting for application monitoring and troubleshooting.</p></li>
-            <li><p>Implemented automatic services (Webhook, Sonarqube, Systemd, Upstart, Crontab, Netdata, JenkinsCI, Docker, etc.) to integrate different development platforms and prevent system crashes.</p></li>
-        </ul>
-    </div>
+      {% endfor %}
+    </div><!--//item-->
+    {% endfor %}
 </section><!--//section-->
+{% endif %}
