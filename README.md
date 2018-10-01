@@ -24,7 +24,10 @@ bundle exec jekyll serve
 or
 
 ```bash
+git clone https://github.com/carson0321/cv ~/test-cv
+cd ~/test-cv
 docker-compose up -d
+# => Now browse to http://localhost:4000/cv/
 ```
 
 ## Credits

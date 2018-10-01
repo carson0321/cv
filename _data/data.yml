@@ -47,7 +47,7 @@ sidebar:
       - item: Open source
 
     skills:
-      - item: Java / Android app / Python
+      - item: Java / Python
       - item: Javascript (NodeJS, ES5+)
       - item: Shell script (Bourne, Bash)
       - item: Go / C / C++ / C#
@@ -60,7 +60,7 @@ career-profile:
     title: Overall 2+ years software development experience
     profiles:
       - item: 2+ years cloud services and backend engineering experience
-      - item: 1.5+ years data collection, data clearning, data analysis experience
+      - item: 1.5+ years data collection, data cleaning, data analysis experience
       - item: 1+ years android native applications experience
       - item: 3+ months iOS native applications experience
 
@@ -178,9 +178,9 @@ experiences:
             - item: Developed a native prototype for Android application including user interfaces and advertising placements, and launched the first version.
             - item: Created multiple interfaces (RESTful) to communicate between Android client and DroiBaaS (Backend as a service) server around cloud services.
             - item: Managed the Android application for notifications within client and server by using Firebase cloud messaging and DroiBaaS cloud code with over 2,500,000 notifications every month.
-            - item: Built a cache system by using MongoDB to improve the execution time of the crawler by 24x, and sped up the process from more than 24 hours to only 1-2 hour or less.
+            - item: Built a cache system by using MongoDB to improve the execution time of the crawler by 24x, and sped up the process from more than 24 hours to only 1-2 hours or less.
             - item: Expanded the capability of crawler to obtain external information by implementing several third-party APIs (Youtube, Vimeo, Tenor, Giphy, Makeagif, Gfycat and so on) as scrapers.
-            - item: Extracted useful information, such as news images, news contents, from over 8000 news sources (100,000 over news daily) by parsing social meta tag and using information extraction algorithms.
+            - item: Extracted useful information, such as news images, news contents, from over 8000 news sources (over 100,000 news daily) by parsing social meta tag and using information extraction algorithms.
             - item: Compressed over 100,000 data from over 8000 news sources through FFmpeg to upload to CDN (AzureCDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, Cloudflare), and reduced the bandwidth cost by more than 90%.
             - item: Cooperated with Shanghai FreemeOS team to integrate InfoHub client into the Android Launcher with FreemeOS system (Generated first revenues for IDroi team by tracing large scale code without documents and injecting InfoHub application into FreemeOS system on my own.)
             - item: Designed a news recommendation system by using machine learning algorithms (SVD/MF for collaborative filtering and Word2Vec/Doc2Vec)
