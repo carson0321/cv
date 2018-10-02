@@ -33,13 +33,6 @@ sidebar:
       - idiom: Speech comprehension
         level: 'Text-based conversation 100%, One-on-one conversation 70-95%, Meeting conversation 30-70%'
 
-    systems:
-      - item: Windows
-      - item: Linux (Ubuntu)
-      - item: macOS
-      - item: iOS
-      - item: Android
-
     interests:
       - item: Games
       - item: Movies & Animations

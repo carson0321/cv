@@ -126,68 +126,12 @@ p {
             margin-bottom: 0px;
         }
     }
-    .languages-container {
+    .languages-container, .disability-container, .interests-container, .skills-container {
         .lang-desc {
             color: rgba(256, 256, 256, 0.6);
         }
     }
-    .languages-list {
-        margin-bottom: 0;
-        li {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .disability-container {
-        .lang-desc {
-            color: rgba(256, 256, 256, 0.6);
-        }
-    }
-    .disability-list {
-        margin-bottom: 0;
-        li {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .systems-container {
-        .lang-desc {
-            color: rgba(256, 256, 256, 0.6);
-        }
-    }
-    .systems-list {
-        margin-bottom: 0;
-        li {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .interests-container {
-        .lang-desc {
-            color: rgba(256, 256, 256, 0.6);
-        }
-    }
-    .interests-list {
-        margin-bottom: 0;
-        li {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .skills-container {
-        .lang-desc {
-            color: rgba(256, 256, 256, 0.6);
-        }
-    }
-    .skills-list {
+    .languages-list, .disability-list, .interests-list, .skills-list {
         margin-bottom: 0;
         li {
             margin-bottom: 10px;
