@@ -16,12 +16,11 @@
           <h3 class="honor-title">{{ honor.name }}</h3>
           <div class="time">{{ honor.time }}</div>
         </div><!--//upper-row-->
+        {% if honor.image %}
+          <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" />
+        {% endif %}
         <div class="organization">{{ honor.organization }}</div>
       </div><!--//meta-->
-
-      {% if honor.image %}
-        <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" />
-      {% endif %}
 
       {% if honor.details %}
         <div class="details">{{ honor.details | markdownify }}</div><!--//details-->
@@ -52,10 +51,10 @@
       <h3 class="honor-title">Scholarship of Cultural Foundation</h3>
       <div class="time">2011</div>
     </div><!--//upper-row-->
+    <img class="honor-img" src="{{site.baseurl}}/assets/images/chc.png" alt="profile picture" />
+    <img class="honor-img" src="{{site.baseurl}}/assets/images/mes.png" alt="profile picture" />  
     <div class="organization">Chia Hsin Cement Corporation</div>
   </div><!--//meta-->
-  <img class="honor-img" src="{{site.baseurl}}/assets/images/chc.png" alt="profile picture" />
-  <img class="honor-img" src="{{site.baseurl}}/assets/images/mes.png" alt="profile picture" />
   <ul type="disc">
       <li><p>Achieved over a semester grade point average of 75/100.</p></li>
       <br/>

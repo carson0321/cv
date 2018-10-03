@@ -15,20 +15,19 @@
           <h3 class="company">{{ experience.company }}</h3>
           <div class="time">{{ experience.time }}</div>
         </div><!--//upper-row-->
+        {% if experience.image %}
+          <img class="experience-img" src="{{site.baseurl}}/assets/images/{{experience.image}}" alt="profile picture" />
+        {% endif %}
         <div class="job-title">{{ experience.role }}</div>
         <div class="program-language">{{ experience.language }}</div>
       </div><!--//meta-->
-
-      {% if experience.image %}
-        <img class="experience-img" src="{{site.baseurl}}/assets/images/{{experience.image}}" alt="profile picture" />
-      {% endif %}
 
       {%for project in experience.projects %}
         {% if project.details %} <div class="details"> {{ project.details | markdownify }} </div><!--//details-->{% endif %}
         <p><b>My contributions and responsibilities:</b></p>
         <ul type="disc">
           {%for column in project.columns %}
-            <li><p>{{ column.item }}</p></li>
+          <li><p><u><b>{{ column.title }}</b></u>: {{ column.item }}</p></li>
           {% endfor %}
           <br/>
         </ul>

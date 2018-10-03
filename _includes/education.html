@@ -28,12 +28,11 @@
           <h3 class="university">{{ graduation.university }}</h3>
           <div class="time">{{ graduation.time }}</div>
         </div><!--//upper-row-->
+        {% if graduation.image %}
+          <img class="education-img" src="{{site.baseurl}}/assets/images/{{graduation.image}}" alt="profile picture" />
+        {% endif %}
         <div class="degree">{{ graduation.degree }}</div>
       </div><!--//meta-->
-
-      {% if graduation.image %}
-        <img class="education-img" src="{{site.baseurl}}/assets/images/{{graduation.image}}" alt="profile picture" />
-      {% endif %}
 
       <ul type="disc">
         {%for column in graduation.columns %}

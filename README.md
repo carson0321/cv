@@ -23,7 +23,7 @@ bundle exec jekyll serve
 
 or
 
-```bash
+```bash
 git clone https://github.com/carson0321/cv ~/test-cv
 cd ~/test-cv
 docker-compose up -d
