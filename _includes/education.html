@@ -24,12 +24,15 @@
   {% for graduation in education %}
     <div class="item">
       <div class="meta">
+        {% if graduation.image %}
+          <img class="education-img" src="{{site.baseurl}}/assets/images/{{graduation.image}}" alt="profile picture" onload="if(!isMobile())this.parentNode.removeChild(this);"/>
+        {% endif %}
         <div class="upper-row">
           <h3 class="university">{{ graduation.university }}</h3>
           <div class="time">{{ graduation.time }}</div>
         </div><!--//upper-row-->
         {% if graduation.image %}
-          <img class="education-img" src="{{site.baseurl}}/assets/images/{{graduation.image}}" alt="profile picture" />
+          <img class="education-img" src="{{site.baseurl}}/assets/images/{{graduation.image}}" alt="profile picture" onload="if(isMobile())this.parentNode.removeChild(this);"/>
         {% endif %}
         <div class="degree">{{ graduation.degree }}</div>
       </div><!--//meta-->

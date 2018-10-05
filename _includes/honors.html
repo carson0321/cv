@@ -12,12 +12,15 @@
   {% for honor in honors %}
     <div class="item">
       <div class="meta">
+        {% if honor.image %}
+          <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" onload="if(!isMobile())this.parentNode.removeChild(this);"/>
+        {% endif %}
         <div class="upper-row">
           <h3 class="honor-title">{{ honor.name }}</h3>
           <div class="time">{{ honor.time }}</div>
         </div><!--//upper-row-->
         {% if honor.image %}
-          <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" />
+          <img class="honor-img" src="{{site.baseurl}}/assets/images/{{honor.image}}" alt="profile picture" onload="if(isMobile())this.parentNode.removeChild(this);"/>
         {% endif %}
         <div class="organization">{{ honor.organization }}</div>
       </div><!--//meta-->
@@ -51,14 +54,15 @@
       <h3 class="honor-title">Scholarship of Cultural Foundation</h3>
       <div class="time">2011</div>
     </div><!--//upper-row-->
-    <img class="honor-img" src="{{site.baseurl}}/assets/images/chc.png" alt="profile picture" />
-    <img class="honor-img" src="{{site.baseurl}}/assets/images/mes.png" alt="profile picture" />  
     <div class="organization">Chia Hsin Cement Corporation</div>
   </div><!--//meta-->
   <ul type="disc">
       <li><p>Achieved over a semester grade point average of 75/100.</p></li>
-      <br/>
   </ul>
+  <img class="honor-img" src="{{site.baseurl}}/assets/images/chc.png" alt="profile picture" />
+  <img class="honor-img" src="{{site.baseurl}}/assets/images/mes.png" alt="profile picture" />
+  <br/>
+  <br/>
 </div><!--//item-->
 <!-- ==========================================exception========================================== -->
 </section><!--//section-->
