@@ -4,12 +4,6 @@
 
 <!-- custom js -->
 <script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.5/mobile-detect.min.js"></script>
-<script type="text/javascript">
-  function isMobile(){
-    return new MobileDetect(window.navigator.userAgent).mobile();
-  }
-</script>
 {% if site.analytics %}
   {% include analytics.html %}
 {% endif %}
