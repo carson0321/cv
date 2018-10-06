@@ -98,14 +98,17 @@ honors:
           item: Served as an invited speaker for achieving outstanding performance amongst deaf people.
         - title:
           item: Ranked second place in 2009 Taiwan College Entrance Examination in Science Major (with biology) for Hearing Impaired Students.
+        - title:
+          item: Got admitted to NTU, NTHU, NCTU and NCKU top 4 graduate schools in Taiwan by achieving general entry requirements.
 
     - name: Imagine Cup
       time: 2012
-      organization: Microsoft, Embedded System Group
+      organization: Microsoft, Embedded Systems Group
       image: ms.png
       details: |
         Designed a system aiming to help children to learn English,
-        using C# with Microsoft Kinect combined CILAB's robot to perform some interactions.
+        using C# with Microsoft Kinect combined CILAB's robot to perform some interactions,
+        such as action and sound imitations.
       columns:
         - title: Advanced to the Final Round
           item:
@@ -130,7 +133,7 @@ honors:
         - title: Members
           item: 3
 
-    - name: Third Edition Competitive Programming of Robot-Car
+    - name: Third Edition Competitive Programming of Robot Car
       time: 2010
       organization: National Central University
       image: ncu.png
@@ -156,7 +159,7 @@ experiences:
           columns:
             - title: ELK stack for data collection and analysis
               item: Replaced Graylog2 platform with ELK stack (Elasticsearch, Logstash, Kibana) to centralize logs and visualize data.
-            - title: Kafka for message broker
+            - title: Apache Kafka for message broker
               item: Evaluated several frameworks for message queues (ActiveMQ, RabbitMQ, RockerMQ, Kafka, etc.), and designed a message broker system by importing Apache Kafka.
     - company: Shanghai Droi Technology Co., Ltd
       role: Taipei Research Center at Taipei 101, IDroi team, Senior Software Engineer
@@ -174,7 +177,7 @@ experiences:
               item: Developed a native prototype for Android application including user interfaces and advertising placements, and launched the first version.
             - title: RESTful interface
               item: Created multiple interfaces (RESTful) to communicate between Android client and DroiBaaS (Backend as a service) server around cloud services.
-            - title: Cloud Messaging for Android
+            - title: Cloud messaging
               item: Managed the Android application for notifications within client and server by using Firebase cloud messaging and DroiBaaS cloud code with over 2,500,000 notifications every month.
             - title: Performance tuning
               item: Built a cache system by using MongoDB to improve the execution time of the crawler by 24x, and sped up the process from more than 24 hours to only 1-2 hours or less.
@@ -184,7 +187,7 @@ experiences:
               item: Extracted useful information, such as news images, news contents, from over 8000 news sources (over 100,000 news daily) by parsing social meta tag and using information extraction algorithms.
             - title: Image processing and CDN cache
               item: Compressed over 100,000 data from over 8000 news sources through FFmpeg to upload to CDN (AzureCDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, Cloudflare), and reduced the bandwidth cost by more than 90%.
-            - title: Android Launcher
+            - title: Android Launcher for left swipe Home Screen
               item: Cooperated with Shanghai FreemeOS team to integrate InfoHub client into the Android Launcher with FreemeOS system (Generated first revenues for IDroi team by tracing large scale code without documents and injecting InfoHub application into FreemeOS system on my own.)
             - title: Data analysis for recommendation system
               item: Designed a news recommendation system by using machine learning algorithms (SVD/MF for collaborative filtering and Word2Vec/Doc2Vec)
