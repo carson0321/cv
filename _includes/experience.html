@@ -27,12 +27,14 @@
 
       {%for project in experience.projects %}
         {% if project.details %} <div class="details"> {{ project.details | markdownify }} </div><!--//details-->{% endif %}
-        <p><b>My contributions and responsibilities:</b></p>
         <ul type="disc">
           {%for column in project.columns %}
-          <li><p><u><b>{{ column.title }}</b></u>: {{ column.item }}</p></li>
+          <li><p>
+            {% if column.title %}<b>{{ column.title }}</b>{% endif %}
+            {% if column.title and column.item %}<b>:</b>{% endif %}
+            {{ column.item }}
+          </p></li>
           {% endfor %}
-          <br/>
         </ul>
       {% endfor %}
     </div><!--//item-->

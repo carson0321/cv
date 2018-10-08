@@ -15,9 +15,15 @@
         <h3 class="career-title">{{ career-profile.title }}</h3>
       </div><!--//upper-row-->
     </div><!--//meta-->
-    <br/>
+    <div class="career-sub-title">{{ career-profile.current.title }}</div>
     <ul type="disc">
-      {%for profile in career-profile.profiles %}
+      {%for profile in career-profile.current.profiles %}
+        <li><p>{{ profile.item }}</p></li>
+      {% endfor %}
+    </ul>
+    <div class="career-sub-title">{{ career-profile.past.title }}</div>
+    <ul type="disc">
+      {%for profile in career-profile.past.profiles %}
         <li><p>{{ profile.item }}</p></li>
       {% endfor %}
     </ul>
