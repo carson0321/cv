@@ -44,14 +44,14 @@ sidebar:
 
 
 career-profile:
-    title: Overall 5+ years software development experience
+    title: Overall 6+ years software development experience
     current:
       title: Currently Focusing on
       profiles:
-        - item: 5+ years backend engineering experience
-        - item: 3.5+ years DevOps CI/CD experience
-        - item: 3+ years data collection, data cleaning and data analysis experience
-        - item: 2+ years web applications (Rails) experience
+        - item: 6+ years backend engineering experience
+        - item: 4.5+ years DevOps CI/CD experience
+        - item: 4+ years data collection, data cleaning and data analysis experience
+        - item: 3+ years web applications (Rails) experience
     past:
       title: Past experiences
       profiles:
@@ -147,26 +147,34 @@ experiences:
       projects:
         - details: |
             <a href="https://threatsonar.org/" style="color:blue;" target="_blank"><u><b>ThreatSonar:</b></u></a>
-             It's an advanced threat hunting and MDR platform with capabilities in compromise assessment, auto-investigation, and orchestration. Equipped with over 100 built-in IoCs and thousands of backdoor indicators, it also helps discover threats and execute incident responses remotely in a post-compromised environment.
+            It's an advanced threat hunting and MDR platform with capabilities in compromise assessment, auto-investigation, and orchestration. Equipped with over 100 built-in IoCs and thousands of backdoor indicators, it also helps discover threats and execute incident responses remotely in a post-compromised environment.
           columns:
-            - title: Application feature
-              item: Develop and maintain various features for web application with Rails, including user interfaces and backend services.
-            - title: Data pipeline & Data analytics
-              item: Design new data pipeline with Kibana and Nginx on Docker container to analyze malicious behaviors.
-            - title: Database migration
-              item: Migrate all production data from MySQL to PostgreSQL to improve complex queries performance.
-            - title: Cluster system
-              item: Build up master slave architecture for data replication and scaling system on PostgreSQL and Elasticsearch.
-            - title: CI/CD
-              item: Create CI and CD pipeline to enhance stability for every PR commits.
-            - title: Performance analysis
-              item: Refactor large design of messy legcay codebase without changing its externally observable behavior (worker dispatcher architecture) and Adopt profiling methods(run stress tests, create table partitions, upgrade frameworks) to improve system efficiency.
-            - title: API Documentation
-              item: Refine existing RESTful APIs by importing Swagger to conserve development resource.
-            - title: Monitoring & Troubleshooting
-              item: Monitor application licenses production environment by developing a chatbot with LINE notify service.
-            - title: Anomaly detection
-              item: Detect threat actors of obfuscated command lines by using natural language processing and machine learning.
+            - group: Full-stack development & maintenance, 2019 - Now
+              items:
+                - title: Features development
+                  item: Responsible for product license system, including encryption and decryption to enable the whole product fully functioning. Lead junior engineers and interns to develop user interfaces and backend services (Python, Rails). Design APIs with a RESTful style as standalone systems (on-premises) to build in an open virtualization format.
+                - title: Automated API Documentation
+                  item: Refine existing RESTful APIs by importing Swagger to conserve development resources.
+                - title: CI/CD pipeline
+                  item: Create complete GitLab CI/CD pipelines for fully automated deployment and enhance PRs stability.
+                - title: Monitoring & Troubleshooting
+                  item: Develop a Chatbot (LINE notify, Linux services) to monitor license and system status.
+            - group: System performance & architecture planning, 2020 - Now
+              items:
+                - title: Data migration
+                  item: Migrate all production data from MySQL to PostgreSQL in a month to improve complex query performance by 30%.
+                - title: Cluster system
+                  item: Design a cluster (PostgreSQL, Elasticsearch) for better data traffic, replication, and scaling system.
+                - title: High availability
+                  item: Achieve high availability architecture (Keepalived, Active-Standby, GlusterFS, table partitions) for failover/failback to enable stability.
+                - title: Performance optimization
+                  item: Refactor legcay worker dispatcher and Adopt profiling with testing to improve system efficiency by 10x.
+            - group: Malware detection, 2020
+              items:
+                - title: Data pipeline & Data analytics
+                  item: Design data pipelines with Kibana and Nginx on Docker containers for analyzing malicious behaviors.
+                - title: Machine learning
+                  item: Research into anomaly detection and NLP to smart detect threat actors of obfuscated command lines.
     - company: D8AI Holdings Corp.
       role: Sr. Software Engineer (Backend/Data Engineer)
       language: Javascript (NodeJS, ES5+) / Python / Golang / Bash
@@ -177,16 +185,14 @@ experiences:
             <a href="https://www.facebook.com/tslvri/" style="color:blue;" target="_blank"><u><b>D8-a11y(TSL):</b></u></a>
             It's a hybrid application (React Native) that helps hearing impaired people to communicate in text on brick-and-mortar stores with telephone.
           columns:
-            - title: Video telephony
-              item: Created WebRTC and SIP calls by deploying Janus server to connect our application server with client.
-            - title: Speech transcription
-              item: Built a SST (speech to text) system with Google cloud speech to hold streams and translate voices.
-            - title: Registration and login system
-              item: Designed a registration and login system with MongoDB and JWT (JSON Web Token) to handle user sessions and profiles.
-            - title: Data pipeline
-              item: Replaced Graylog2 platform with ELK stack (Elasticsearch, Logstash, Kibana) to centralize logs and visualize data.
-            - title: Message broker system
-              item: Evaluated several message queues frameworks (ActiveMQ, RabbitMQ, RockerMQ, Kafka, etc.), and established a message broker system with Kafka and AWS.
+            - group: Backend development, 2018 – 2019
+              items:
+                - title: Video telephony & Speech transcription
+                  item: Adopted Janus framework (WebRTC, SIP) and Google Cloud Speech for stable streaming media.
+                - title: Registration & login system
+                  item: Designed a registration/login system (MongoDB, JWT) to conveniently handle user sessions and profiles.
+                - title: Message broker system
+                  item: Established a whole message broker system (ELK stack, Kafka MQ, AWS) to centralize logs and visualize data.
     - company: Shanghai Droi Technology Co., Ltd
       role: Sr. Software Engineer (Mobile Application Fullstack Engineer)
       language: Java / Javascript (NodeJS, ES5+) / Lua / Python / Objective-C / Swift / Bash
@@ -197,32 +203,32 @@ experiences:
             <a href="https://play.google.com/store/apps/details?id=com.infohub.monster&hl=zh_TW" style="color:blue;" target="_blank"><u><b>InfoHub:</b></u></a>
             It's a native mobile application(iOS/Android) that represents a real-time data concept within data industry about information, such as news, videos, and funny images.
           columns:
-            - title: Android prototype
-              item: Developed Android native prototypes including user interfaces and advertising placements, and launched the first version.
-            - title: RESTful interface
-              item: Created multiple backend interfaces (RESTful) to handle data storage and communicate between Android client and DroiBaaS (Backend as a service) server around cloud services.
-            - title: Cloud messaging
-              item: Designed Android notifications system within client and server by using Firebase cloud messaging and DroiBaaS cloud code with over 2,500,000 every month.
-            - title: Performance tuning
-              item: Built a cache system with MongoDB and parallel processing to improve execution time of data crawler by 24x, and sped up overall process from more than 24 hours to only 1-2 hours or less.
-            - title: Data collection & Data cleaning
-              item: Expanded capability of data crawler to obtain external information by implementing several third-party APIs (Youtube, Vimeo, Tenor, Giphy, Makeagif, Gfycat and so on) as scrapers.
-            - title: Data analysis
-              item: Extracted useful information, such as data images, contents, from over 8000 data sources (over 100,000 data daily) by parsing social meta tag and using information extraction algorithms (NLP, Boilerpipe)
-            - title: Image processing & CDN cache
-              item: Compressed over 100,000 data from over 8000 data sources through FFmpeg to upload to CDN (AzureCDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, Cloudflare), and reduced overall bandwidth cost by more than 90%.
-            - title: Android launcher integration
-              item: Cooperated with FreemeOS team to integrate InfoHub client into Android launcher for left swipe home screen with FreemeOS system.
-            - title: Recommendation system
-              item: Built a personalized news recommendation system by using machine learning algorithms (SVD/MF for collaborative filtering, Word2Vec/Doc2Vec)
-            - title: Monitoring & troubleshooting
-              item: Implemented various automatic services (Chatbots on WeChat and Telegram, Webhook, Sonarqube, Systemd, Upstart, Crontab, Netdata, JenkinsCI, Docker, etc.) to prevent system crashes and achieve automatic broadcasting for application monitoring and troubleshooting.
+            - group: Android full-stack & launcher development, 2016 - 2018
+              items:
+                - title: Android deployment & launcher
+                  item: Responsible for Android native prototypes, news, and media retrieval from the backend. Implemented RESTful interfaces (DroiCloud BaaS). Integrated InfoHub with Ads into FreemeOS launcher for left swipe home screen.
+                - title: Cloud messaging
+                  item: Designed a notification system (Firebase, DroiBaaS) that delivered 2.5M messages per month and track active user patterns.
+                - title: Data collection, cleaning, analysis
+                  item: Expanded data crawler capability to obtain external information by implementing several third-party APIs (Youtube, Vimeo, Tenor, Giphy, Makeagif, Gfycat and so on) as scrapers. Parsed social meta tag and used information extraction algorithms (NLP, Boilerpipe) to extract useful information, such as data images, contents, from over 8K data sources (over 100K data daily)
+            - group: System performance, monitoring and troubleshooting, 2016 - 2018
+              items:
+                - title: Performance tuning
+                  item: Built parallel processing data crawler with MongoDB cache to improve performance by 24x. Compressed over 100K data from over 8K data sources through FFmpeg to upload to CDN (AzureCDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, Cloudflare) to reduce overall bandwidth costs by more than 90%.
+                - title: Monitoring & troubleshooting
+                  item: Implemented various system troubleshooting and monitoring services (Chatbots on WeChat & Telegram, Webhook, Sonarqube, Systemd, Upstart, Crontab, Netdata, JenkinsCI, Docker, etc.) to prevent system crashes and achieve automatic broadcasting.
+            - group: News recommendation, 2017 - 2018
+              items:
+                - title: Recommendation system
+                  item: Built a personalized news recommendation news system based on collaborative filtering with news categories and user classes. Features involve a document feature-based (Word2Vec/Doc2Vec) and model-based (SVD/MF) hybrid approach.
         - details: |
             <a href="https://adzodiac.droi.com" style="color:blue;" target="_blank"><u><b>AdZodiac:</b></u></a>
             It's a fully integrated advertising platform that is based on web services and MoPub mobile SDK by using different advertising APIs (Facebook, AdMob, Flurry, etc.)
           columns:
-            - title: Advertising SDK
-              item: Assisted advertising team in developing native applications for Android/iOS platform and building Ads SDK for client, which fetches Ads and send events.
+            - group: Advertising SDK development, 2018
+              items:
+                - title: Advertising SDK
+                  item: Assisted advertising team in developing native applications for Android/iOS platform and building Ads SDK for clients, which fetch Ads and send events, to increase revenues.
 
 # projects:
 #     title: Projects

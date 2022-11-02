@@ -29,11 +29,16 @@
         {% if project.details %} <div class="details"> {{ project.details | markdownify }} </div><!--//details-->{% endif %}
         <ul type="disc">
           {%for column in project.columns %}
-          <li><p>
-            {% if column.title %}<b>{{ column.title }}</b>{% endif %}
-            {% if column.title and column.item %}<b>:</b>{% endif %}
-            {{ column.item }}
-          </p></li>
+          <li>
+            {% if column.group %}<a style="color:red;" target="_blank"><u><b>{{ column.group }}</b></u></a>{% endif %}
+            {%for item in column.items %}
+              <ul><li><p>
+                {% if item.title %}<b>{{ item.title }}</b>{% endif %}
+                {% if item.title and item.item %}<b>:</b>{% endif %}
+                {{ item.item }}
+              </p></li></ul>
+            {% endfor %}
+          </li>
           {% endfor %}
         </ul>
       {% endfor %}
