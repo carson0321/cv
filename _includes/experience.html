@@ -14,14 +14,14 @@
         {% if experience.image %}
           <img class="experience-img" src="{{site.baseurl}}/assets/images/{{experience.image}}" alt="profile picture" onload="if(!isMobile())this.parentNode.removeChild(this);"/>
         {% endif %}
+        <h3 class="company">{{ experience.company }}</h3>
         <div class="upper-row">
-          <h3 class="company">{{ experience.company }}</h3>
+          <div class="job-title">{{ experience.role }}</div>
           <div class="time">{{ experience.time }}</div>
         </div><!--//upper-row-->
         {% if experience.image %}
           <img class="experience-img" src="{{site.baseurl}}/assets/images/{{experience.image}}" alt="profile picture" onload="if(isMobile())this.parentNode.removeChild(this);"/>
         {% endif %}
-        <div class="job-title">{{ experience.role }}</div>
         <div class="program-language">{{ experience.language }}</div>
       </div><!--//meta-->
 

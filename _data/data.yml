@@ -135,10 +135,24 @@ honors:
 
 experiences:
     - company: TeamT5 Inc.
+      image: teamt5.jpg
+      role: Staff Research Engineer (Tech Lead)
+      language: Ruby / Python / Javascript (ES5+) / Bash
+      time: 2023.05 - Present
+      projects:
+        - details: |
+            Unlike a Team Lead, this role involves determining the technical direction for the product, focusing on solving technical issues and conducting code reviews, as well as assisting in talent recruitment for the company.
+          columns:
+            - group: Full-stack development & maintenance, 2019 - 2023
+              items:
+                - title:
+                  item: Responsible for the entire backend architecture, including the post-processing, agent engine, product platform, and product license system.
+
+    - company:
+      image:
       role: Sr. Research Engineer (Web Application Fullstack Engineer)
       language: Ruby / Python / Javascript (ES5+) / Bash
-      time: 2019.10 - Present
-      image: teamt5.jpg
+      time: 2019.10 - 2023.04
       projects:
         - details: |
             <a href="https://threatsonar.org/" style="color:blue;" target="_blank"><u><b>ThreatSonar:</b></u></a>
