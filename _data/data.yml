@@ -6,7 +6,7 @@ sidebar:
     education: False # set to False if you want education in main section instead of in sidebar
     # Profile information
     name: Carson Wang
-    tagline: Software Engineer
+    tagline: Sr. Software Engineer
     avatar: profile.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -44,14 +44,14 @@ sidebar:
 
 
 career-profile:
-    title: Overall 6+ years software development experience
+    title: Overall 6.5+ years software development experience
     current:
       title: Currently Focusing on
       profiles:
-        - item: 6+ years backend engineering experience
-        - item: 4.5+ years DevOps CI/CD experience
-        - item: 4+ years data collection, data cleaning and data analysis experience
-        - item: 3+ years web applications (Rails) experience
+        - item: 6.5+ years backend engineering experience
+        - item: 5+ years DevOps CI/CD experience
+        - item: 4.5+ years data collection, data cleaning and data analysis experience
+        - item: 3.5+ years web applications (Rails) experience
     past:
       title: Past experiences
       profiles:
@@ -97,9 +97,7 @@ honors:
       organization: Microsoft, Embedded Systems Group
       image: ms.png
       details: |
-        Designed a system aiming to help children to learn English,
-        using C# with Microsoft Kinect combined CILAB's robot to perform some interactions,
-        such as imitating sounds and actions.
+        Designed a system using C# and Microsoft Kinect, combined with CILAB's robot, to assist children in learning English. The system incorporates interactive features, such as imitating sounds and actions, to enhance the learning experience.
       columns:
         - title: Advanced to the Final Round
           item:
@@ -113,9 +111,7 @@ honors:
       organization: Chunghwa Telecom, Smart Home Applications Group
       image: ct.png
       details: |
-        Built a system that helps parents to know the learning situation of children,
-        using C# to retrieve the image information for analysis through Microsoft Kinect.
-        All information could be upload the network platform for parents to review or download.
+        Built a system using C# that enables parents to monitor their children's learning progress. The system retrieves image information through Kinect for analysis. All the collected data can be uploaded to a network platform for parents to review and download.
       columns:
         - title: Advanced to the Final Round
           item:
@@ -129,10 +125,9 @@ honors:
       organization: National Central University
       image: ncu.png
       details: |
-        Adopted a CI-STAMP evaluation board (Provided by CILab),
-        using C to design the self-propelled vehicle program and challenge in a maze.
+        Utilized the CI-STAMP evaluation board (provided by CILab) to develop a self-propelled vehicle program using C. The program was designed to navigate and overcome challenges in a maze.
       columns:
-        - title: Won the Champion (More than 20 teams)
+        - title: Won the Championship (More than 20 teams)
           item:
         - title: Members
           item: 4 (Team Leader)
@@ -147,36 +142,38 @@ experiences:
       projects:
         - details: |
             <a href="https://threatsonar.org/" style="color:blue;" target="_blank"><u><b>ThreatSonar:</b></u></a>
-            It's an advanced threat hunting and MDR platform with capabilities in compromise assessment, auto-investigation, and orchestration. Equipped with over 100 built-in IoCs and thousands of backdoor indicators, it also helps discover threats and execute incident responses remotely in a post-compromised environment.
+            The platform is an advanced threat hunting and MDR (Managed Detection and Response) solution with a wide range of capabilities. These include compromise assessment, auto-investigation, and orchestration. With over 100 built-in IoCs (Indicators of Compromise) and thousands of backdoor indicators, it enables the discovery of threats and remote execution of incident responses in a post-compromised environment.
           columns:
-            - group: Full-stack development & maintenance, 2019 - Now
+            - group: Full-stack development & maintenance, 2019 - 2023
               items:
                 - title: Features development
-                  item: Responsible for product license system, including encryption and decryption to enable the whole product to fully function. Led a small team to develop user interfaces and backend services with Python and Rails.
+                  item: Managed the product license system, ensuring product functionality through encryption and decryption. Led a small team in developing user interfaces and backend services using Python and Rails.
                 - title: Backend development
-                  item: Designed APIs with a RESTful style and Websocket as standalone systems (on-premises) to build in an open virtualization format. Refined existing RESTful APIs by importing Swagger to conserve development resources.
+                  item: Designed RESTful APIs, WebSockets, and other services (Linux kernel) as standalone systems (on-premises) to build an open virtualization format. Refined existing APIs by importing Swagger to conserve development resources.
                 - title: Automation, monitoring & troubleshooting
-                  item: Created complete GitLab CI/CD pipelines for fully automated deployment and enhance PRs stability. Developed an alarm system with Chatbot (LINE notify, Linux services) and SMTP to monitor license and system status for maintenance.
-            - group: Architecture planning, 2020 - Now
+                  item: Created comprehensive GitLab CI/CD pipelines for fully automated deployment, improving PR stability. Developed an alarm system with Chatbot and SMTP integration to monitor license and system status for maintenance purposes.
+            - group: Architecture planning, 2020 - 2023
               items:
                 - title: Cluster system
-                  item: Pioneered a PostgreSQL and Elasticsearch cluster for better data traffic, replication, and scaling system.
+                  item: Pioneered the implementation of a MySQL, PostgreSQL, and Elasticsearch cluster, leading to significant enhancements in data traffic, replication, and system scalability.
                 - title: High availability
-                  item: Achieved high availability architecture (Keepalived, Active-Standby, GlusterFS, table partitions) for failover/failback to enable stability.
-            - group: System performance, 2020 - Now
+                  item: Achieved a high availability architecture (Keepalived, Active-Standby, GlusterFS, and cluster) to ensure stability and enable failover/failback capabilities.
+            - group: System performance, 2020 - 2023
               items:
                 - title: Data migration
-                  item: Migrated all production data from MySQL to PostgreSQL in a month to improve complex query performance by 30%.
+                  item: Successfully migrated data from MySQL to PostgreSQL within a month, resulting in a 30-50% improvement in complex query performance.
                 - title: Performance optimization
-                  item: Refactored legacy worker dispatcher and Adopted profiling with stress testing to improve system efficiency by 10x.
+                  item: Refactored the legacy worker dispatcher and implemented profiling with stress testing to enhance system efficiency by 10x.
                 - title: Cache system
-                  item: Devised a real-time cache system with TTL using Redis to reduce response time by quantity according to data usage.
+                  item: Devised a real-time cache system using Redis with TTL (Time To Live) to reduce response time based on data usage.
+                - title: Table partition
+                  item: Designed monthly rotated table partitions to alleviate the database's load, particularly when handling extensive data volumes.
             - group: Malware detection, 2020
               items:
                 - title: Data pipeline & analytics
-                  item: Built data pipelines with Kibana and Nginx on Docker containers for analyzing malicious behaviors.
+                  item: Built data pipelines using Docker containers with Kibana and Nginx for analyzing malicious behaviors.
                 - title: Machine learning
-                  item: Researched anomaly detection and NLP to smart detect threat actors of obfuscated command lines.
+                  item: Conducted research on anomaly detection and NLP (Natural Language Processing) to intelligently detect threat actors using obfuscated command lines.
     - company: D8AI Holdings Corp.
       role: Sr. Software Engineer (Backend/Data Engineer)
       language: Javascript (NodeJS, ES5+) / Python / Golang / Bash
@@ -185,16 +182,16 @@ experiences:
       projects:
         - details: |
             <a href="https://www.facebook.com/tslvri/" style="color:blue;" target="_blank"><u><b>D8-a11y(TSL):</b></u></a>
-            It's a hybrid application (React Native) that helps hearing impaired people to communicate in text on brick-and-mortar stores with telephone.
+            It's a hybrid application (React Native) designed to assist hearing-impaired individuals in communicating via text while at brick-and-mortar stores using a telephone.
           columns:
             - group: Backend development, 2018 – 2019
               items:
                 - title: Videotelephony & speech transcription
-                  item: Adopted Janus framework (WebRTC, SIP) and Google Cloud Speech for stable streaming media.
+                  item: Adopted the Janus framework (WebRTC and SIP), along with Google Cloud Speech, to ensure stable streaming media capabilities.
                 - title: Registration & login system
-                  item: Built a registration/login system using MongoDB and JWT to conveniently handle user sessions and profiles.
+                  item: Built a user registration/login system using MongoDB and JWT (JSON Web Tokens) for efficient management of user sessions and profiles.
                 - title: Message broker system
-                  item: Established a whole message broker system (ELK stack, Kafka MQ, AWS) to centralize logs and visualize data.
+                  item: Established a comprehensive message broker system (ELK stack, Kafka MQ, and AWS) for centralized log management and data visualization.
     - company: Shanghai Droi Technology Co., Ltd
       role: Sr. Software Engineer (Mobile Application Fullstack Engineer)
       language: Java / Javascript (NodeJS, ES5+) / Lua / Python / Objective-C / Swift / Bash
@@ -202,33 +199,33 @@ experiences:
       image: droi.jpg
       projects:
         - details: |
-            <a href="https://play.google.com/store/apps/details?id=com.infohub.monster&hl=zh_TW" style="color:blue;" target="_blank"><u><b>InfoHub:</b></u></a>
-            It's a native mobile application(iOS/Android) that represents a real-time data concept within data industry about information, such as news, videos, funny images, and media retrieval.
+            <a href="https://play.google.com/store/apps/details?id=com.infohub.monster" style="color:blue;" target="_blank"><u><b>InfoHub:</b></u></a>
+            It's a native mobile application for iOS and Android that focuses on real-time data within the data industry, providing information such as news, videos, funny images, and media retrieval.
           columns:
             - group: Android full-stack & launcher development, 2016 - 2018
               items:
                 - title: Android deployment & launcher
-                  item: Responsible for Android native prototypes, news, and media retrieval from BaaS. Integrated InfoHub with Ads into FreemeOS launcher for left swipe home screen.
+                  item: Developed Android native prototypes and implemented media retrieval from the internal BaaS (Backend as a Service) platform. Integrated Ads into the Android launcher, positioning it on the left swipe home screen.
                 - title: Data collection, cleaning, analysis
-                  item: Expanded data crawler capability to obtain external information by implementing several third-party APIs (Youtube, Vimeo, Tenor, Giphy, Makeagif, Gfycat, and so on) as scrapers. Parsed social meta tag and used NLP/Boilerpipe information extraction algorithms to extract useful information, such as data images, and contents, from over 8K data sources (over 100K data daily)
+                  item: Expanded the data crawler's capabilities by implementing various third-party APIs (such as YouTube, Vimeo, Tenor, Giphy, Makeagif, Gfycat, etc.) as scrapers to obtain external information. Implemented social meta tag parsing and utilized NLP/Boilerpipe information extraction algorithms to extract useful information, including data images and contents, from over 8K data sources, processing over 100K data daily.
                 - title: Cloud messaging
-                  item: Devised a notification system using Firebase and DroiBaaS that delivered 2.5M messages per month to track MAU patterns.
+                  item: Devised a notification system using Firebase and BaaS to efficiently deliver 2.5M messages per month for tracking MAU (Monthly Active Users).
             - group: System performance, infrastructure, recommendation, 2017 - 2018
               items:
                 - title: Performance tuning
-                  item: Built parallel processing data crawler with MongoDB cache to improve performance by 24x. Compressed over 100K data from over 8K data sources through FFmpeg to upload into CDN (AzureCDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, Cloudflare) to reduce overall bandwidth costs by more than 90%.
+                  item: Built a parallel processing data crawler with MongoDB cache, resulting in a 24x performance improvement. Compressed over 100K data from more than 8K data sources using FFmpeg, and uploaded them to CDN (Azure CDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, and Cloudflare) to significantly reduce overall bandwidth costs by over 90%.
                 - title: Monitoring & troubleshooting
-                  item: Implemented various system troubleshooting and monitoring services (Chatbots on WeChat & Telegram, Webhook, Sonarqube, Systemd, Upstart, Crontab, Netdata, JenkinsCI, Docker, etc.) to prevent system crashes and achieve automatic broadcasting.
+                  item: Implemented a range of system troubleshooting and monitoring services, including Chatbots on WeChat and Telegram, Webhook integration, SonarQube for code analysis, Systemd and Upstart for service management, Crontab for scheduling tasks, Netdata for real-time monitoring, JenkinsCI for continuous integration, and Docker for containerization. These services proactively prevent system crashes and enable automatic broadcasting.
                 - title: Recommendation system
-                  item: Built a personalized news recommendation based on collaborative filtering with news categories and user classes. Features involve a document Word2Vec/Doc2Vec feature-based and SVD/MF model-based hybrid approach to work perceivably.
+                  item: Built a personalized news recommendation system utilizing collaborative filtering with news categories and user classes to enhance exposure. Implemented a hybrid approach that combines Word2Vec/Doc2Vec feature-based document representation with SVD/MF model-based methods to improve efficiency.
         - details: |
             <a href="https://adzodiac.droi.com" style="color:blue;" target="_blank"><u><b>AdZodiac:</b></u></a>
-            It's a fully integrated advertising platform that is based on web services and MoPub mobile SDK by using different advertising APIs (Facebook, AdMob, Flurry, etc.)
+            It's a fully integrated advertising platform based on web services and MoPub mobile SDK, incorporating various advertising APIs such as Facebook, AdMob, Flurry, and more.
           columns:
             - group: Advertising SDK development, 2018
               items:
                 - title: Advertising SDK
-                  item: Assisted advertising team in developing native applications for Android/iOS platform and building Ads SDK for clients, which fetch Ads and send events, to increase revenues.
+                  item: Assisted an advertising team in developing native applications for Android/iOS platforms and built an Ads SDK for clients, resulting in increased revenues.
 
 # projects:
 #     title: Projects
