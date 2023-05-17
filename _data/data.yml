@@ -143,10 +143,10 @@ experiences:
         - details: |
             Unlike a Team Lead, this role involves not only assisting in talent recruitment for the company but also determining the technical direction for the product, focusing on solving large-scale technical issues, expanding the scope of impact, and conducting code reviews.
           columns:
-            - group: Full-stack development & maintenance, 2023 - Now
+            - group: Full-stack development & Maintenance, 2023 - Now
               items:
                 - title:
-                  item: Responsible for the entire backend architecture, including the post-processing, agent engine, product platform, and product license system.
+                  item: Responsible for the entire backend architecture, including the post-processing, agent engine, product platform, and license system.
 
     - company:
       image:
@@ -158,12 +158,12 @@ experiences:
             <a href="https://threatsonar.org/" style="color:blue;" target="_blank"><u><b>ThreatSonar:</b></u></a>
             The platform is an advanced threat hunting and MDR (Managed Detection and Response) solution with a wide range of capabilities. These include compromise assessment, auto-investigation, and orchestration. With over 100 built-in IoCs (Indicators of Compromise) and thousands of backdoor indicators, it enables the discovery of threats and remote execution of incident responses in a post-compromised environment.
           columns:
-            - group: Full-stack development & maintenance, 2019 - 2023
+            - group: Full-stack development & Maintenance, 2019 - 2023
               items:
                 - title: Features development
-                  item: Managed the product license system, ensuring product functionality through encryption and decryption. Led a small team in developing user interfaces and backend services using Python and Rails.
+                  item: Managed the license system, ensuring product functionality through encryption and decryption. Led a small team in developing user interfaces and backend services using Python and Rails.
                 - title: Backend development
-                  item: Designed RESTful APIs, WebSockets, and other services (Linux kernel) as standalone systems (on-premises) to build an open virtualization format. Refined existing APIs by importing Swagger to conserve development resources.
+                  item: Designed RESTful APIs, WebSockets, and other services (Linux kernel) as standalone systems (on-premises) to build an open virtualization format. Refined existing APIs and imported Swagger to conserve development resources.
                 - title: Automation, monitoring & troubleshooting
                   item: Created comprehensive GitLab CI/CD pipelines for fully automated deployment, improving PR stability. Developed an alarm system with Chatbot and SMTP integration to monitor license and system status for maintenance purposes.
             - group: Architecture planning, 2021 - 2023
@@ -171,11 +171,11 @@ experiences:
                 - title: Cluster system
                   item: Pioneered the implementation of a MySQL, PostgreSQL, and Elasticsearch cluster, leading to significant enhancements in data traffic, replication, and system scalability.
                 - title: High availability
-                  item: Achieved a high availability architecture (Keepalived, Active-Standby, GlusterFS, and cluster) to ensure stability and enable failover/failback capabilities.
+                  item: Achieved a high availability architecture (Keepalived, Active/Standby, GlusterFS, and cluster) to ensure stability and enable failover/failback capabilities.
             - group: System performance, 2020 - 2023
               items:
                 - title: Data migration
-                  item: Successfully migrated data from MySQL to PostgreSQL within a month, resulting in a 30-50% improvement in complex query performance.
+                  item: Migrated data from MySQL to PostgreSQL within a month, resulting in a 30-50% improvement in complex query performance.
                 - title: Performance optimization
                   item: Refactored the legacy worker dispatcher and implemented profiling with stress testing to enhance system efficiency by 10x.
                 - title: Cache system
@@ -201,7 +201,7 @@ experiences:
             - group: Backend development, 2018 – 2019
               items:
                 - title: Videotelephony & speech transcription
-                  item: Adopted the Janus framework (WebRTC and SIP) in conjunction with Google Cloud Speech to ensure stable streaming media capabilities.
+                  item: Adopted the Janus framework (WebRTC and SIP) in conjunction with GCP (Google Cloud Platform) Speech to ensure stable streaming media capabilities.
                 - title: Registration & login system
                   item: Built a user registration/login system using MongoDB and JWT (JSON Web Tokens) for efficient management of user sessions and profiles.
                 - title: Message broker system
@@ -215,8 +215,11 @@ experiences:
         - details: |
             <a href="https://play.google.com/store/apps/details?id=com.infohub.monster" style="color:blue;" target="_blank"><u><b>InfoHub:</b></u></a>
             It's a native mobile application for iOS and Android that focuses on real-time data within the data industry, providing information such as news, videos, funny images, and media retrieval.
+            <br>
+            <a href="https://adzodiac.droi.com" style="color:blue;" target="_blank"><u><b>AdZodiac:</b></u></a>
+            It's a fully integrated advertising platform based on web services and MoPub mobile SDK, incorporating various advertising APIs such as Facebook, AdMob, Flurry, and more.
           columns:
-            - group: Android full-stack & launcher development, 2016 - 2018
+            - group: Mobile full-stack development, Launcher, and Advertising SDK, 2016 - 2018
               items:
                 - title: Android deployment & launcher
                   item: Developed Android native prototypes and implemented media retrieval from the internal BaaS (Backend as a Service) platform. Integrated Ads into the Android launcher, positioning it on the left swipe home screen.
@@ -224,22 +227,16 @@ experiences:
                   item: Expanded the data crawler's capabilities by implementing various third-party APIs (such as YouTube, Vimeo, Tenor, Giphy, Makeagif, Gfycat, etc.) as scrapers to obtain external information. Implemented social meta tag parsing and utilized NLP/Boilerpipe information extraction algorithms to extract useful information, including data images and contents, from over 8K data sources, processing over 100K data daily.
                 - title: Cloud messaging
                   item: Devised a notification system using Firebase and BaaS to efficiently deliver 2.5M messages per month for tracking MAU (Monthly Active Users).
-            - group: System performance, infrastructure, recommendation, 2017 - 2018
+                - title: Advertising SDK
+                  item: Assisted an advertising team in developing native applications for Android/iOS platforms and built an Ads SDK for clients, resulting in increased revenues.
+            - group: System performance, Infrastructure, and Recommendation, 2017 - 2018
               items:
                 - title: Performance tuning
-                  item: Built a parallel processing data crawler with MongoDB cache, resulting in a 24x performance improvement. Compressed over 100K data from more than 8K data sources using FFmpeg, and uploaded them to CDN (Azure CDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, and Cloudflare) to significantly reduce overall bandwidth costs by over 90%.
+                  item: Designed a parallel processing data crawler with MongoDB cache, resulting in a 24x performance improvement. Compressed over 100K data from more than 8K data sources using FFmpeg, and uploaded them to CDN (Azure CDN with Azure Blob Storage, BelugaCDN with Google Cloud Storage, and Cloudflare) to significantly reduce overall bandwidth costs by over 90%.
                 - title: Monitoring & troubleshooting
                   item: Implemented a comprehensive range of system troubleshooting and monitoring services, including Chatbots on WeChat and Telegram, Webhook integration, SonarQube for code analysis, Systemd and Upstart for service management, Crontab for scheduling tasks, Netdata for real-time monitoring, JenkinsCI for continuous integration, and Docker for containerization. These services proactively prevent system crashes and enable automatic broadcasting.
                 - title: Recommendation system
                   item: Built a personalized news recommendation system utilizing collaborative filtering with news categories and user classes to enhance exposure. Implemented a hybrid approach that combines Word2Vec/Doc2Vec feature-based document representation with SVD/MF model-based methods to improve efficiency.
-        - details: |
-            <a href="https://adzodiac.droi.com" style="color:blue;" target="_blank"><u><b>AdZodiac:</b></u></a>
-            It's a fully integrated advertising platform based on web services and MoPub mobile SDK, incorporating various advertising APIs such as Facebook, AdMob, Flurry, and more.
-          columns:
-            - group: Advertising SDK development, 2018
-              items:
-                - title: Advertising SDK
-                  item: Assisted an advertising team in developing native applications for Android/iOS platforms and built an Ads SDK for clients, resulting in increased revenues.
 
 # projects:
 #     title: Projects
