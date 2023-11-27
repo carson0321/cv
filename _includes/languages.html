@@ -6,7 +6,9 @@
     {%for language in languages %}
       <li>
         {{ language.idiom }}
-        <span class="lang-desc">({{ language.level }})</span>
+        {% if language.level %}
+          <span class="lang-desc">({{ language.level }})</span>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

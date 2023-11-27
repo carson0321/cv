@@ -25,7 +25,7 @@ sidebar:
       - idiom: Chinese
         level: Native
       - idiom: English
-        level: 'L/S: Elementary, R/W: Proficient'
+        level:
 
     disability:
       - idiom: Hearing impairment
@@ -44,14 +44,14 @@ sidebar:
 
 
 career-profile:
-    title: Overall 6.5+ years Software development experience
+    title: Overall 7+ years Software development experience
     current:
       title: Currently Focusing on
       profiles:
-        - item: 6.5+ years Backend engineering experience
-        - item: 5+ years DevOps CI/CD experience
-        - item: 4.5+ years Data collection, Data cleaning, and Data analysis experience
-        - item: 3.5+ years Web applications (Rails) experience
+        - item: 7+ years Backend engineering experience
+        - item: 5.5+ years DevOps CI/CD experience
+        - item: 5+ years Data collection, Data cleaning, and Data analysis experience
+        - item: 4+ years Web applications (Rails) experience
     past:
       title: Past experiences
       profiles:
