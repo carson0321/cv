@@ -148,11 +148,11 @@ experiences:
             - group: Full-stack development & Maintenance, 2024 - Now
               items:
                 - title:
-                  item: Spearheaded the development of innovative projects, including Windows event tracing hunter, risk assessment tool, and AI assistant, collaborating with the Chief Research Officer and Chief Architect.
+                  item: Spearheaded the development of innovative projects, including Windows event tracing hunter, Endpoint CVE scanner, and AI assistant, collaborating with the Chief Research Officer and Chief Architect.
             - group: Product security, 2024 - Now
               items:
                 - title:
-                  item: Discovered critical cybersecurity incidents (at least 5+ vulnerabilities, including CVE-2024-7694) in the product independently and established a PSIRT from scratch.
+                  item: Discovered critical cybersecurity incidents (10+ vulnerabilities, including CVE-2025-4477, CVE-2024-7694) in the product and established a PSIRT with security policy SOP (before, during, and after) from scratch.
                 - title:
                   item: Developed and designed a self-check product security system with alerting capabilities to prevent C2 attacks.
 
