@@ -152,7 +152,7 @@ experiences:
             - group: Product security, 2024 - Now
               items:
                 - title:
-                  item: Discovered critical cybersecurity incidents (10+ vulnerabilities, including CVE-2025-4477, CVE-2024-7694) in the product and established a PSIRT with security policy SOP (before, during, and after) from scratch.
+                  item: Discovered critical cybersecurity incidents (10+ vulnerabilities, including CVE-2025-4477, CVE-2024-7694, and another WIP) in the product and established a PSIRT with security policy SOP (before, during, and after) from scratch.
                 - title:
                   item: Developed and designed a self-check product security system with alerting capabilities to prevent C2 attacks.
 
