@@ -44,15 +44,15 @@ sidebar:
 
 
 career-profile:
-    title: Overall 8+ years Software development experience
+    title: Overall 9+ years Software development experience
     current:
       title: Currently Focusing on
       profiles:
-        - item: 8+ years Backend engineering experience
-        - item: 6.5+ years DevOps CI/CD experience
-        - item: 6+ years Data collection, Data cleaning, and Data analysis experience
-        - item: 1+ years Team/projects management experience
-        - item: 6+ months Security research experience
+        - item: 9+ years Backend engineering experience
+        - item: 7.5+ years DevOps CI/CD experience
+        - item: 7+ years Data collection, Data cleaning, and Data analysis experience
+        - item: 2+ years Team/projects management experience
+        - item: 1+ years Security research experience
 
     past:
       title: Past experiences
@@ -152,7 +152,7 @@ experiences:
             - group: Product security, 2024 - Now
               items:
                 - title:
-                  item: Discovered critical cybersecurity incidents (10+ vulnerabilities, including CVE-2025-4477, CVE-2024-7694, and another WIP) in the product and established a PSIRT with security policy SOP (before, during, and after) from scratch.
+                  item: Discovered critical cybersecurity incidents (10+ vulnerabilities, including CVE-2025-7145, CVE-2025-4477, and CVE-2024-7694) in the product and established a PSIRT with security policy SOP (before, during, and after) from scratch.
                 - title:
                   item: Developed and designed a self-check product security system with alerting capabilities to prevent C2 attacks.
 
