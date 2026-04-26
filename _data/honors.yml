@@ -1,0 +1,66 @@
+# Combined entries share bullet points under a single item block
+- entries:
+    - name: Career Sharing Talk
+      time: "2021"
+      organization: Dandelion Hearing and Language Association
+      image: dandelion.png
+    - name: Career Transition Coach Workshop for Hearing Impaired Students
+      time: "2014"
+      organization: Taipei City Government, Department of Education
+      image: taipeiedu.png
+  items:
+    - Served as an invited speaker for achieving outstanding performance amongst deaf people.
+    - Ranked second place in 2009 Taiwan College Entrance Examination in sciences major (with biology) for hearing impaired students.
+    - Got admitted to TOP 3 graduate schools(NTU, NTHU, NCTU) in Taiwan by achieving general student entry requirements.
+
+- name: Imagine Cup
+  time: "2012"
+  organization: Microsoft, Embedded Systems Group
+  image: ms.png
+  details: |
+    Designed a system using C# and Microsoft Kinect, combined with CILAB's robot, to assist children in learning English. The system incorporates interactive features, such as imitating sounds and actions, to enhance the learning experience.
+  columns:
+    - title: Advanced to the Final Round
+      item:
+    - title: Subject
+      item: English Learning Companion Robot
+    - title: Members
+      item: 3
+
+- name: Innovation Competition
+  time: "2012"
+  organization: Chunghwa Telecom, Smart Home Applications Group
+  image: ct.png
+  details: |
+    Built a system using C# that enables parents to monitor their children's learning progress. The system retrieves image information through Kinect for analysis. All the collected data can be uploaded to a network platform for parents to review and download.
+  columns:
+    - title: Advanced to the Final Round
+      item:
+    - title: Subject
+      item: System Detection by Face Orientation
+    - title: Members
+      item: 3
+
+- name: Third Edition Competitive Programming of Robotic Car
+  time: "2010"
+  organization: National Central University
+  image: ncu.png
+  details: |
+    Utilized the CI-STAMP evaluation board (provided by CILab) to develop a self-propelled vehicle program using C. The program was designed to navigate and overcome challenges in a maze.
+  columns:
+    - title: Won the Championship (More than 20 teams)
+      item:
+    - title: Members
+      item: 4 (Team Leader)
+
+- entries:
+    - name: Scholarship of Special Education
+      time: "2011 - 2013, 2015"
+      organization: Ministry of Education of the Republic of China (Taiwan)
+      image: mes.png
+    - name: Scholarship of Cultural Foundation
+      time: "2011"
+      organization: Chia Hsin Cement Corporation
+      image: chc.png
+  items:
+    - Achieved over a semester grade point average of A(4/4.3).

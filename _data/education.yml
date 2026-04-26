@@ -1,0 +1,27 @@
+- degree: Master of Science in Graduate Institute of Networking and Multimedia
+  university: National Taiwan University
+  time: 2014.09 – 2016.07
+  image: ntu.png
+  columns:
+    - title: Master's Thesis
+      item: Predicting Web Services with Service Ontology
+    - title: Lab & Advisor
+      item: Software Engineering Laboratory, Jonathan Lee, Ph.D
+    - title: Relevant Research Domains
+      item: Prediction and Recommender System, Ontology, Natural Language Processing, Information Retrieval and Extraction, Machine Learning
+    - title: Relevant Courseworks
+      item: Software Engineering, Software Engineering Design (Design Pattern), Computer Security, Interactive Computer Graphics, Computer Vision, Natural Language Processing, Information Retrieval and Extraction, Personal Communication Service
+
+- degree: Bachelor of Computer Science and Information Engineering
+  university: National Central University
+  time: 2009.09 – 2013.06
+  image: ncu.png
+  columns:
+    - title: Senior Projects
+      item: System Detection by Face Orientation, English Learning Companion Robot
+    - title: Lab & Advisor
+      item: Computational Intelligence and Human Computer Interaction Laboratory, Mu-Chun Su, Ph.D
+    - title: Relevant Courseworks
+      item: The Attack and Defense of Computers, Object Oriented Analysis and Design, Computer Animation and 3D Games, Virtual Reality, Multimedia Signal Processing, Software Hardware Codesign, Computer Networking
+    - title: Societies
+      item: Service Club of NCU (Member, Sep 2009 - Jun 2011), Sign Language Club of NCU (Member, Sep 2009 - Jun 2010), Student Association of NCU CSIE (Member of IT Department, Sep 2009 - Jun 2010)

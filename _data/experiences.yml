@@ -1,0 +1,106 @@
+- company: TeamT5 Inc.
+  image: teamt5.jpg
+  role: Architect
+  language: Ruby / Python / Bash / Golang
+  time: 2024.08 - 2025.12
+  projects:
+    - details:
+      columns:
+        - group: Full-stack development & Maintenance, 2024 - 2025
+          items:
+            - title:
+              item: Spearheaded the development of innovative projects, including Windows event tracing hunter, Endpoint CVE scanner, and AI assistant, collaborating with the Chief Research Officer and Chief Architect.
+        - group: Product security, 2024 - 2025
+          items:
+            - title:
+              item: Discovered critical cybersecurity incidents (10+ vulnerabilities, including CVE-2025-7145, CVE-2025-4477, and CVE-2024-7694) in the product and established a PSIRT with security policy SOP (before, during, and after) from scratch.
+            - title:
+              item: Developed and designed a self-check product security system with alerting capabilities to prevent C2 attacks.
+
+- company:
+  image:
+  role: Staff/Sr. Research Engineer (Tech Lead, Fullstack Engineer)
+  language: Ruby / Python / Javascript (ES5+) / Bash
+  time: 2019.10 - 2024.07
+  projects:
+    - details: |
+        <a href="https://threatsonar.org/" style="color:blue;" target="_blank"><u><b>ThreatSonar:</b></u></a>
+        The platform is an advanced threat hunting and MDR (Managed Detection and Response) solution with a wide range of capabilities. These include compromise assessment, auto-investigation, and orchestration. With over 100 built-in IoCs (Indicators of Compromise) and thousands of backdoor indicators, it enables the discovery of threats and remote execution of incident responses in a post-compromised environment.
+      columns:
+        - group: Full-stack development & Maintenance, 2019 - 2024
+          items:
+            - title:
+              item: Managed the entire backend architecture for ThreatSonar, encompassing post-processing, agent engine, product platform, and license system.
+            - title:
+              item: Developed RESTful APIs and WebSockets for new features, optimizing API structures with Swagger to enhance resource efficiency.
+            - title:
+              item: Built GitLab CI/CD pipelines for automated deployment and a Chatbot/SMTP-integrated alarm system to monitor system status.
+        - group: Architecture planning & System performance, 2020 - 2023
+          items:
+            - title:
+              item: Pioneered the implementation of a MySQL, PostgreSQL, and Elasticsearch cluster, leading to significant enhancements in data traffic, replication, and system scalability.
+            - title:
+              item: Achieved high availability with Keepalived, Active/Standby, GlusterFS to ensure stability and enable failover/failback capabilities.
+            - title:
+              item: Migrated data from MySQL to PostgreSQL within a month, resulting in a 30-50% improvement in complex query performance.
+            - title:
+              item: Refactored the legacy worker dispatcher and implemented profiling with stress testing to enhance system efficiency by 10x.
+            - title:
+              item: Devised a real-time cache system using Redis with TTL to reduce response time based on data usage.
+            - title:
+              item: Designed monthly rotated table partitions to alleviate the database's load, particularly when handling extensive data volumes.
+        - group: Malware detection, 2020
+          items:
+            - title:
+              item: Built container-based data pipelines with Kibana and Nginx to analyze malicious behavior.
+            - title:
+              item: Researched anomaly detection and NLP to detect threat actors via obfuscated commands.
+
+- company: D8AI Holdings Corp.
+  image: d8ai.jpg
+  role: Sr. Software Engineer (Backend/Data Engineer)
+  language: Javascript (NodeJS, ES5+) / Python / Golang / Bash
+  time: 2018.7 - 2019.5
+  projects:
+    - details: |
+        <a href="https://www.facebook.com/tslvri/" style="color:blue;" target="_blank"><u><b>D8-a11y(TSL):</b></u></a>
+        It's a hybrid application (React Native) designed to assist hearing-impaired individuals in communicating via text while at brick-and-mortar stores using a telephone.
+      columns:
+        - group: Backend development, 2018 - 2019
+          items:
+            - title:
+              item: Implemented stable streaming media with the Janus framework (WebRTC/SIP) and GCP Speech, alongside a MongoDB/JWT-based user session management system.
+            - title:
+              item: Built a message broker system with ELK, Kafka MQ, and AWS for centralized log management and data visualization.
+
+- company: Shanghai Droi Technology Co., Ltd
+  image: droi.jpg
+  role: Sr. Software Engineer (Mobile Application Fullstack Engineer)
+  language: Java / Javascript (NodeJS, ES5+) / Lua / Python / Objective-C / Swift / Bash
+  time: 2016.9 - 2018.6
+  projects:
+    - details: |
+        <a href="https://play.google.com/store/apps/details?id=com.infohub.monster" style="color:blue;" target="_blank"><u><b>InfoHub:</b></u></a>
+        It's a native mobile application for iOS and Android that focuses on real-time data within the data industry, providing information such as news, videos, funny images, and media retrieval.
+        <br>
+        <a href="https://adzodiac.droi.com" style="color:blue;" target="_blank"><u><b>AdZodiac:</b></u></a>
+        It's a fully integrated advertising platform based on web services and MoPub mobile SDK, incorporating various advertising APIs such as Facebook, AdMob, Flurry, and more.
+      columns:
+        - group: Mobile full-stack development, Android launcher, and Advertising SDK, 2016 - 2018
+          items:
+            - title:
+              item: Developed Android prototypes, integrated media retrieval from a BaaS platform, and implemented Ads on the Android launcher's home screen.
+            - title:
+              item: Expanded a data crawler with third-party APIs, NLP, and information extraction, and built an Ads SDK for Android/iOS, boosting revenue.
+            - title:
+              item: Devised a notification system using Firebase and BaaS to efficiently deliver 2.5M messages per month for tracking MAU.
+            - title:
+              item: Assisted an advertising team in developing native applications for Android/iOS platforms and built an Ads SDK for clients, resulting in increased revenues.
+        - group: System performance, Infrastructure, and Recommendation, 2017 - 2018
+          items:
+            - title:
+              item: Designed a parallel data crawler with MongoDB cache, improving performance by 24x and reducing bandwidth costs by over 90% using CDN.
+            - title:
+              item: Implemented a comprehensive range of system troubleshooting and monitoring services to proactively prevent system crashes.
+            - title:
+              item: Built a personalized news recommendation system using collaborative filtering and hybrid Word2Vec/Doc2Vec with SVD/MF models for enhanced efficiency.

@@ -1,0 +1,30 @@
+education: false
+
+name: Carson Wang
+tagline: Architect | Tech Lead | Lead Software Engineer | Principal Software Engineer
+avatar: profile.jpeg
+
+email: r03944040@g.ntu.edu.tw
+linkedin: carson321
+github: carson0321
+
+languages:
+  - idiom: Chinese
+    level: Native
+  - idiom: English
+    level:
+
+disability:
+  - idiom: Hearing impairment
+    level: 'Left: hearing aid, Right: cochlear implant'
+  - idiom: Speech comprehension
+    level: 'Text-based conversation 100%, One-on-one conversation 70-95%, Meeting conversation 30-70%'
+
+skills:
+  - item: Ruby / Java / Python
+  - item: Javascript (NodeJS, ES5+)
+  - item: Shell script (Bourne, Bash)
+  - item: Golang / C / C++ / C#
+  - item: Objective-C / Swift
+  - item: Lua / Assembly / Perl
+  - item: HTML / CSS
